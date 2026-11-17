@@ -1,0 +1,50 @@
+{
+  "01_supervised_learning/01_regression/linear_regression/01_linear_regression.ipynb": {
+    "notebook": "01_supervised_learning/01_regression/linear_regression/01_linear_regression.ipynb",
+    "status": "ok",
+    "seconds": 8.8,
+    "error": ""
+  },
+  "01_supervised_learning/01_regression/elastic_net/05_elastic_net.ipynb": {
+    "notebook": "01_supervised_learning/01_regression/elastic_net/05_elastic_net.ipynb",
+    "status": "ok",
+    "seconds": 10.5,
+    "error": ""
+  },
+  "01_supervised_learning/01_regression/gradient_boosting_regressor/07_gradient_boosting_regressor.ipynb": {
+    "notebook": "01_supervised_learning/01_regression/gradient_boosting_regressor/07_gradient_boosting_regressor.ipynb",
+    "status": "ok",
+    "seconds": 14.5,
+    "error": ""
+  },
+  "01_supervised_learning/01_regression/hist_gradient_boosting/08_hist_gradient_boosting.ipynb": {
+    "notebook": "01_supervised_learning/01_regression/hist_gradient_boosting/08_hist_gradient_boosting.ipynb",
+    "status": "ok",
+    "seconds": 12.0,
+    "error": ""
+  },
+  "01_supervised_learning/01_regression/lasso_regression/04_lasso_regression.ipynb": {
+    "notebook": "01_supervised_learning/01_regression/lasso_regression/04_lasso_regression.ipynb",
+    "status": "ok",
+    "seconds": 9.0,
+    "error": ""
+  },
+  "01_supervised_learning/01_regression/polynomial_regression/02_polynomial_regression.ipynb": {
+    "notebook": "01_supervised_learning/01_regression/polynomial_regression/02_polynomial_regression.ipynb",
+    "status": "ok",
+    "seconds": 8.4,
+    "error": ""
+  },
+  "01_supervised_learning/01_regression/ridge_regression/03_ridge_regression.ipynb": {
+    "notebook": "01_supervised_learning/01_regression/ridge_regression/03_ridge_regression.ipynb",
+    "status": "ok",
+    "seconds": 9.3,
+    "error": ""
+  },
+  "01_supervised_learning/01_regression/support_vector_regression/06_support_vector_regression.ipynb": {
+    "notebook": "01_supervised_learning/01_regression/support_vector_regression/06_support_vector_regression.ipynb",
+    "status": "ok",
+    "seconds": 8.9,
+    "error": ""
+  }
+}

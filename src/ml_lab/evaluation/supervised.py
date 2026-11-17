@@ -43,3 +43,21 @@ def classification_metrics(y_true, y_pred, y_score=None):
 def compare_models(results):
     """Dict of name to metrics into table."""
     return pd.DataFrame(results).T.round(4)
+
+
+def predict_scores(model, X):
+    """Probabilities or decision scores."""
+    if hasattr(model, "predict_proba"):
+        return model.predict_proba(X)
+    if hasattr(model, "decision_function"):
+        return model.decision_function(X)
+    return None
+
+
+def evaluate_estimator(model, X, y, task):
+    """One call metric dict."""
+    predictions = model.predict(X)
+    if task == "regression":
+        return regression_metrics(y, predictions)
+    scores = predict_scores(model, X)
+    return classification_metrics(y, predictions, scores)

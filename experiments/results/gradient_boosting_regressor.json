@@ -1,0 +1,51 @@
+{
+  "notebook": "gradient_boosting_regressor",
+  "family": "supervised",
+  "algorithm": "GradientBoostingRegressor",
+  "dataset": "diabetes",
+  "task": "regression",
+  "seed": 42,
+  "config": {
+    "param": "model__n_estimators",
+    "value": "100"
+  },
+  "metrics": {
+    "MAE": 41.925650820655235,
+    "MSE": 2679.52531073145,
+    "RMSE": 51.76413150755502,
+    "R2": 0.4942528191115563,
+    "MAPE_percent": 38.419954308234864
+  },
+  "extra": {
+    "baseline": {
+      "MAE": 64.00646146990485,
+      "MSE": 5361.533457238513,
+      "RMSE": 73.22249283682244,
+      "R2": -0.011962984778542296,
+      "MAPE_percent": 62.79179610552188
+    },
+    "cv_mean": -56.18210083157459,
+    "cv_std": 4.983786207025613,
+    "cv_scoring": "neg_root_mean_squared_error",
+    "select_metric": "RMSE"
+  },
+  "created": "2026-11-17T23:22:13+00:00",
+  "environment": {
+    "python": "3.13.18",
+    "platform": "Linux-6.18.44-fc-v595-x86_64-with-glibc2.39",
+    "cpu_count": 2,
+    "packages": {
+      "numpy": "2.5.3",
+      "pandas": "3.0.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "matplotlib": "3.11.2",
+      "xgboost": "3.4.1",
+      "lightgbm": "4.7.0",
+      "catboost": "1.2.10",
+      "umap-learn": "0.6.0",
+      "torch": "2.15.0",
+      "gymnasium": "1.4.0"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "notebook": "hist_gradient_boosting",
+  "family": "supervised",
+  "algorithm": "HistGradientBoostingRegressor",
+  "dataset": "auto_mpg",
+  "task": "regression",
+  "seed": 42,
+  "config": {
+    "param": "model__max_iter",
+    "value": "50"
+  },
+  "metrics": {
+    "MAE": 1.8611320102906177,
+    "MSE": 6.667153589259236,
+    "RMSE": 2.582083187904533,
+    "R2": 0.8693754427153209,
+    "MAPE_percent": 8.69158852883727
+  },
+  "extra": {
+    "baseline": {
+      "MAE": 5.880956039956324,
+      "MSE": 51.62029239680701,
+      "RMSE": 7.184726327203216,
+      "R2": -0.011357808240890499,
+      "MAPE_percent": 30.196475298944097
+    },
+    "cv_mean": -3.03177230737193,
+    "cv_std": 0.2881816422271239,
+    "cv_scoring": "neg_root_mean_squared_error",
+    "select_metric": "RMSE"
+  },
+  "created": "2026-11-17T23:22:27+00:00",
+  "environment": {
+    "python": "3.13.18",
+    "platform": "Linux-6.18.44-fc-v595-x86_64-with-glibc2.39",
+    "cpu_count": 2,
+    "packages": {
+      "numpy": "2.5.3",
+      "pandas": "3.0.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "matplotlib": "3.11.2",
+      "xgboost": "3.4.1",
+      "lightgbm": "4.7.0",
+      "catboost": "1.2.10",
+      "umap-learn": "0.6.0",
+      "torch": "2.15.0",
+      "gymnasium": "1.4.0"
+    }
+  }
+}
