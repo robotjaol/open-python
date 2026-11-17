@@ -1,0 +1,51 @@
+{
+  "notebook": "support_vector_machine",
+  "family": "supervised",
+  "algorithm": "SVC",
+  "dataset": "digits",
+  "task": "classification",
+  "seed": 42,
+  "config": {
+    "param": "model__C",
+    "value": "10.0"
+  },
+  "metrics": {
+    "Accuracy": 0.9805555555555555,
+    "Precision": 0.9810771297613403,
+    "Recall": 0.9803968253968254,
+    "F1": 0.9805015284652674,
+    "ROC_AUC_ovr": 0.9995243250576584
+  },
+  "extra": {
+    "baseline": {
+      "Accuracy": 0.1,
+      "Precision": 0.01,
+      "Recall": 0.1,
+      "F1": 0.01818181818181818,
+      "ROC_AUC_ovr": 0.5
+    },
+    "cv_mean": 0.9819254419382395,
+    "cv_std": 0.007856323140121657,
+    "cv_scoring": "f1_macro",
+    "select_metric": "F1"
+  },
+  "created": "2026-11-17T23:31:06+00:00",
+  "environment": {
+    "python": "3.13.18",
+    "platform": "Linux-6.18.44-fc-v595-x86_64-with-glibc2.39",
+    "cpu_count": 2,
+    "packages": {
+      "numpy": "2.5.3",
+      "pandas": "3.0.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "matplotlib": "3.11.2",
+      "xgboost": "3.4.1",
+      "lightgbm": "4.7.0",
+      "catboost": "1.2.10",
+      "umap-learn": "0.6.0",
+      "torch": "2.15.0",
+      "gymnasium": "1.4.0"
+    }
+  }
+}

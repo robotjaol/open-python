@@ -46,5 +46,77 @@
     "status": "ok",
     "seconds": 8.9,
     "error": ""
+  },
+  "01_supervised_learning/02_classification/adaboost/10_adaboost.ipynb": {
+    "notebook": "01_supervised_learning/02_classification/adaboost/10_adaboost.ipynb",
+    "status": "ok",
+    "seconds": 24.6,
+    "error": ""
+  },
+  "01_supervised_learning/02_classification/catboost/09_catboost.ipynb": {
+    "notebook": "01_supervised_learning/02_classification/catboost/09_catboost.ipynb",
+    "status": "ok",
+    "seconds": 21.0,
+    "error": ""
+  },
+  "01_supervised_learning/02_classification/decision_tree/03_decision_tree.ipynb": {
+    "notebook": "01_supervised_learning/02_classification/decision_tree/03_decision_tree.ipynb",
+    "status": "ok",
+    "seconds": 13.8,
+    "error": ""
+  },
+  "01_supervised_learning/02_classification/extra_trees/11_extra_trees.ipynb": {
+    "notebook": "01_supervised_learning/02_classification/extra_trees/11_extra_trees.ipynb",
+    "status": "ok",
+    "seconds": 43.6,
+    "error": ""
+  },
+  "01_supervised_learning/02_classification/k_nearest_neighbors/02_k_nearest_neighbors.ipynb": {
+    "notebook": "01_supervised_learning/02_classification/k_nearest_neighbors/02_k_nearest_neighbors.ipynb",
+    "status": "ok",
+    "seconds": 9.8,
+    "error": ""
+  },
+  "01_supervised_learning/02_classification/lightgbm/08_lightgbm.ipynb": {
+    "notebook": "01_supervised_learning/02_classification/lightgbm/08_lightgbm.ipynb",
+    "status": "ok",
+    "seconds": 19.3,
+    "error": ""
+  },
+  "01_supervised_learning/02_classification/logistic_regression/01_logistic_regression.ipynb": {
+    "notebook": "01_supervised_learning/02_classification/logistic_regression/01_logistic_regression.ipynb",
+    "status": "ok",
+    "seconds": 10.5,
+    "error": ""
+  },
+  "01_supervised_learning/02_classification/mlp/12_mlp.ipynb": {
+    "notebook": "01_supervised_learning/02_classification/mlp/12_mlp.ipynb",
+    "status": "ok",
+    "seconds": 19.0,
+    "error": ""
+  },
+  "01_supervised_learning/02_classification/naive_bayes/06_naive_bayes.ipynb": {
+    "notebook": "01_supervised_learning/02_classification/naive_bayes/06_naive_bayes.ipynb",
+    "status": "ok",
+    "seconds": 27.0,
+    "error": ""
+  },
+  "01_supervised_learning/02_classification/random_forest/04_random_forest.ipynb": {
+    "notebook": "01_supervised_learning/02_classification/random_forest/04_random_forest.ipynb",
+    "status": "ok",
+    "seconds": 70.1,
+    "error": ""
+  },
+  "01_supervised_learning/02_classification/support_vector_machine/05_support_vector_machine.ipynb": {
+    "notebook": "01_supervised_learning/02_classification/support_vector_machine/05_support_vector_machine.ipynb",
+    "status": "ok",
+    "seconds": 18.7,
+    "error": ""
+  },
+  "01_supervised_learning/02_classification/xgboost/07_xgboost.ipynb": {
+    "notebook": "01_supervised_learning/02_classification/xgboost/07_xgboost.ipynb",
+    "status": "ok",
+    "seconds": 17.7,
+    "error": ""
   }
 }

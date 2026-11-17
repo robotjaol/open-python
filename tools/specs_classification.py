@@ -625,7 +625,13 @@ Xn = X_trainval.copy()
 Xn[cat_cols] = Xn[cat_cols].astype(str)
 Xn = Xn.fillna(Xn.median(numeric_only=True))
 params = dict(iterations=100, learning_rate=0.1, depth=5, random_seed=SEED, verbose=0, thread_count=2, allow_writing_files=False)
-native = cross_val_score(CatBoostClassifier(cat_features=cat_cols, **params), Xn, y_trainval, cv=3, scoring="average_precision")
+from sklearn.model_selection import StratifiedKFold
+from sklearn.metrics import average_precision_score
+native = []
+for tr_idx, te_idx in StratifiedKFold(3, shuffle=True, random_state=SEED).split(Xn, y_trainval):
+    cb = CatBoostClassifier(cat_features=cat_cols, **params).fit(Xn.iloc[tr_idx], y_trainval.iloc[tr_idx])
+    native.append(average_precision_score(y_trainval.iloc[te_idx], cb.predict_proba(Xn.iloc[te_idx])[:, 1]))
+native = np.array(native)
 onehot = cross_val_score(make_model_pipeline(X_trainval, CatBoostClassifier(**params), scale=False), X_trainval, y_trainval, cv=3, scoring="average_precision")
 print(f"native categorical: CV PR-AUC {native.mean():.3f} +- {native.std(ddof=1):.3f}")
 print(f"one-hot: CV PR-AUC {onehot.mean():.3f} +- {onehot.std(ddof=1):.3f}")'''),

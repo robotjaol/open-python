@@ -1,0 +1,53 @@
+{
+  "notebook": "lightgbm",
+  "family": "supervised",
+  "algorithm": "LGBMClassifier",
+  "dataset": "telco_churn",
+  "task": "classification",
+  "seed": 42,
+  "config": {
+    "param": "model__num_leaves",
+    "value": "4"
+  },
+  "metrics": {
+    "Accuracy": 0.8048261178140526,
+    "Precision": 0.6644518272425249,
+    "Recall": 0.5347593582887701,
+    "F1": 0.5925925925925926,
+    "ROC_AUC": 0.8465602314707175,
+    "PR_AUC": 0.66639565475896
+  },
+  "extra": {
+    "baseline": {
+      "Accuracy": 0.7345635202271115,
+      "Precision": 0.0,
+      "Recall": 0.0,
+      "F1": 0.0,
+      "ROC_AUC": 0.5,
+      "PR_AUC": 0.2654364797728886
+    },
+    "cv_mean": 0.6701371217077806,
+    "cv_std": 0.02361936434768209,
+    "cv_scoring": "average_precision",
+    "select_metric": "PR_AUC"
+  },
+  "created": "2026-11-17T23:28:39+00:00",
+  "environment": {
+    "python": "3.13.18",
+    "platform": "Linux-6.18.44-fc-v595-x86_64-with-glibc2.39",
+    "cpu_count": 2,
+    "packages": {
+      "numpy": "2.5.3",
+      "pandas": "3.0.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "matplotlib": "3.11.2",
+      "xgboost": "3.4.1",
+      "lightgbm": "4.7.0",
+      "catboost": "1.2.10",
+      "umap-learn": "0.6.0",
+      "torch": "2.15.0",
+      "gymnasium": "1.4.0"
+    }
+  }
+}

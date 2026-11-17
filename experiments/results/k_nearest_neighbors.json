@@ -1,0 +1,51 @@
+{
+  "notebook": "k_nearest_neighbors",
+  "family": "supervised",
+  "algorithm": "KNeighborsClassifier",
+  "dataset": "wine",
+  "task": "classification",
+  "seed": 42,
+  "config": {
+    "param": "model__n_neighbors",
+    "value": "7"
+  },
+  "metrics": {
+    "Accuracy": 1.0,
+    "Precision": 1.0,
+    "Recall": 1.0,
+    "F1": 1.0,
+    "ROC_AUC_ovr": 1.0
+  },
+  "extra": {
+    "baseline": {
+      "Accuracy": 0.3888888888888889,
+      "Precision": 0.12962962962962962,
+      "Recall": 0.3333333333333333,
+      "F1": 0.18666666666666668,
+      "ROC_AUC_ovr": 0.5
+    },
+    "cv_mean": 0.9511414677513749,
+    "cv_std": 0.04794922171111376,
+    "cv_scoring": "f1_macro",
+    "select_metric": "F1"
+  },
+  "created": "2026-11-17T23:28:28+00:00",
+  "environment": {
+    "python": "3.13.18",
+    "platform": "Linux-6.18.44-fc-v595-x86_64-with-glibc2.39",
+    "cpu_count": 2,
+    "packages": {
+      "numpy": "2.5.3",
+      "pandas": "3.0.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "matplotlib": "3.11.2",
+      "xgboost": "3.4.1",
+      "lightgbm": "4.7.0",
+      "catboost": "1.2.10",
+      "umap-learn": "0.6.0",
+      "torch": "2.15.0",
+      "gymnasium": "1.4.0"
+    }
+  }
+}
