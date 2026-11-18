@@ -1,0 +1,47 @@
+{
+  "notebook": "sarsa",
+  "family": "reinforcement_learning",
+  "algorithm": "SARSA",
+  "dataset": "CliffWalking-v1",
+  "task": "control",
+  "seed": 42,
+  "config": {
+    "alpha": 0.5,
+    "gamma": 1.0,
+    "epsilon": 0.1,
+    "episodes": 500,
+    "seeds": 10
+  },
+  "metrics": {
+    "online_mean_sarsa": -26.163,
+    "online_std_sarsa": 3.940228560770443,
+    "greedy_mean_sarsa": -54.0,
+    "greedy_std_sarsa": 76.95308816270973,
+    "online_mean_q_learning": -47.534,
+    "online_std_q_learning": 10.352161556355702,
+    "greedy_mean_q_learning": -13.0,
+    "greedy_std_q_learning": 0.0
+  },
+  "extra": {
+    "optimal_return": -13
+  },
+  "created": "2026-11-18T04:57:59+00:00",
+  "environment": {
+    "python": "3.13.18",
+    "platform": "Linux-6.18.44-fc-v595-x86_64-with-glibc2.39",
+    "cpu_count": 2,
+    "packages": {
+      "numpy": "2.5.3",
+      "pandas": "3.0.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "matplotlib": "3.11.2",
+      "xgboost": "3.4.1",
+      "lightgbm": "4.7.0",
+      "catboost": "1.2.10",
+      "umap-learn": "0.6.0",
+      "torch": "2.15.0",
+      "gymnasium": "1.4.0"
+    }
+  }
+}

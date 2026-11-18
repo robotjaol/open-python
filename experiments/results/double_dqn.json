@@ -1,0 +1,54 @@
+{
+  "notebook": "double_dqn",
+  "family": "reinforcement_learning",
+  "algorithm": "DoubleDQN",
+  "dataset": "CartPole-v1",
+  "task": "control",
+  "seed": 42,
+  "config": {
+    "total_steps": 20000,
+    "seeds": 3,
+    "target_every": 250,
+    "gamma": 0.99
+  },
+  "metrics": {
+    "eval_mean_return_double_dqn": 113.85000000000001,
+    "eval_mean_return_dqn": 353.9666666666667,
+    "eval_std_across_seeds_double_dqn": 27.74153023897565,
+    "mean_max_q_double_dqn": 45.871943058111725,
+    "mean_max_q_dqn": 46.806703322973,
+    "discounted_return_upper_bound": 99.34295169575846,
+    "random_policy_mean_return": 21.7
+  },
+  "extra": {
+    "per_seed_eval_double": [
+      89.5,
+      144.05,
+      108.0
+    ],
+    "per_seed_eval_dqn": [
+      500.0,
+      488.2,
+      73.7
+    ]
+  },
+  "created": "2026-11-18T05:00:19+00:00",
+  "environment": {
+    "python": "3.13.18",
+    "platform": "Linux-6.18.44-fc-v595-x86_64-with-glibc2.39",
+    "cpu_count": 2,
+    "packages": {
+      "numpy": "2.5.3",
+      "pandas": "3.0.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "matplotlib": "3.11.2",
+      "xgboost": "3.4.1",
+      "lightgbm": "4.7.0",
+      "catboost": "1.2.10",
+      "umap-learn": "0.6.0",
+      "torch": "2.15.0",
+      "gymnasium": "1.4.0"
+    }
+  }
+}

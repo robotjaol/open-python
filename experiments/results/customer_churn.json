@@ -1,0 +1,71 @@
+{
+  "notebook": "customer_churn",
+  "family": "project",
+  "algorithm": "hist_gradient_boosting",
+  "dataset": "telco_churn",
+  "task": "classification",
+  "seed": 42,
+  "config": {
+    "selected_model": "hist_gradient_boosting",
+    "threshold": 0.18,
+    "fn_cost": 5.0,
+    "fp_cost": 1.0
+  },
+  "metrics": {
+    "test_PR_AUC": 0.6607083577880704,
+    "test_ROC_AUC": 0.8449172027177143,
+    "baseline_PR_AUC": 0.2654364797728886,
+    "precision_at_threshold": 0.46870451237263466,
+    "recall_at_threshold": 0.8609625668449198,
+    "F1_at_threshold": 0.6069745523091423,
+    "cv_PR_AUC_mean": 0.6669922707013128,
+    "cv_PR_AUC_std": 0.01139288441815521,
+    "cost_model": 625.0,
+    "cost_contact_nobody": 1870.0,
+    "cost_contact_everybody": 1035.0
+  },
+  "extra": {
+    "validation_table": [
+      {
+        "model": "dummy",
+        "validation_PR_AUC": 0.2654,
+        "validation_ROC_AUC": 0.5
+      },
+      {
+        "model": "logistic",
+        "validation_PR_AUC": 0.6418,
+        "validation_ROC_AUC": 0.8359
+      },
+      {
+        "model": "random_forest",
+        "validation_PR_AUC": 0.6329,
+        "validation_ROC_AUC": 0.8352
+      },
+      {
+        "model": "hist_gradient_boosting",
+        "validation_PR_AUC": 0.6459,
+        "validation_ROC_AUC": 0.8367
+      }
+    ],
+    "cost_note": "costs are assumptions"
+  },
+  "created": "2026-11-18T05:12:07+00:00",
+  "environment": {
+    "python": "3.13.18",
+    "platform": "Linux-6.18.44-fc-v595-x86_64-with-glibc2.39",
+    "cpu_count": 2,
+    "packages": {
+      "numpy": "2.5.3",
+      "pandas": "3.0.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "matplotlib": "3.11.2",
+      "xgboost": "3.4.1",
+      "lightgbm": "4.7.0",
+      "catboost": "1.2.10",
+      "umap-learn": "0.6.0",
+      "torch": "2.15.0",
+      "gymnasium": "1.4.0"
+    }
+  }
+}

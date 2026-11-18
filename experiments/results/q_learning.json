@@ -1,0 +1,51 @@
+{
+  "notebook": "q_learning",
+  "family": "reinforcement_learning",
+  "algorithm": "QLearning",
+  "dataset": "FrozenLake-v1",
+  "task": "control",
+  "seed": 42,
+  "config": {
+    "alpha": 0.1,
+    "gamma": 0.99,
+    "epsilon": 1.0,
+    "decay": 0.9995,
+    "episodes": 20000,
+    "seeds": 5
+  },
+  "metrics": {
+    "success_rate_mean": 0.7495,
+    "success_rate_std": 0.0,
+    "dp_optimal_success_simulated": 0.7495,
+    "dp_optimal_success_exact": 0.8235294100658614,
+    "random_success": 0.018
+  },
+  "extra": {
+    "per_seed_success": [
+      0.7495,
+      0.7495,
+      0.7495,
+      0.7495,
+      0.7495
+    ]
+  },
+  "created": "2026-11-18T04:55:21+00:00",
+  "environment": {
+    "python": "3.13.18",
+    "platform": "Linux-6.18.44-fc-v595-x86_64-with-glibc2.39",
+    "cpu_count": 2,
+    "packages": {
+      "numpy": "2.5.3",
+      "pandas": "3.0.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "matplotlib": "3.11.2",
+      "xgboost": "3.4.1",
+      "lightgbm": "4.7.0",
+      "catboost": "1.2.10",
+      "umap-learn": "0.6.0",
+      "torch": "2.15.0",
+      "gymnasium": "1.4.0"
+    }
+  }
+}

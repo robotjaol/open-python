@@ -1,0 +1,68 @@
+{
+  "notebook": "customer_segmentation",
+  "family": "project",
+  "algorithm": "KMeans",
+  "dataset": "telco_churn",
+  "task": "clustering",
+  "seed": 42,
+  "config": {
+    "k": 2,
+    "features": [
+      "tenure",
+      "MonthlyCharges",
+      "TotalCharges",
+      "n_addons"
+    ],
+    "n_init": 10
+  },
+  "metrics": {
+    "clusters": 2,
+    "noise_fraction": 0.0,
+    "Silhouette": 0.45865203060390025,
+    "Davies_Bouldin": 0.8422289139985106,
+    "Calinski_Harabasz": 8066.861253823076,
+    "stability_ARI_mean": 0.9941690516303303,
+    "stability_ARI_std": 0.004892546460393661,
+    "churn_rate_min_segment": 0.17,
+    "churn_rate_max_segment": 0.32
+  },
+  "extra": {
+    "profile": [
+      {
+        "segment": 0,
+        "customers": 4486,
+        "churn_rate": 0.32,
+        "tenure": 19.75,
+        "monthly": 50.88,
+        "addons": 0.98
+      },
+      {
+        "segment": 1,
+        "customers": 2557,
+        "churn_rate": 0.17,
+        "tenure": 54.51,
+        "monthly": 89.12,
+        "addons": 3.89
+      }
+    ]
+  },
+  "created": "2026-11-18T05:12:20+00:00",
+  "environment": {
+    "python": "3.13.18",
+    "platform": "Linux-6.18.44-fc-v595-x86_64-with-glibc2.39",
+    "cpu_count": 2,
+    "packages": {
+      "numpy": "2.5.3",
+      "pandas": "3.0.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "matplotlib": "3.11.2",
+      "xgboost": "3.4.1",
+      "lightgbm": "4.7.0",
+      "catboost": "1.2.10",
+      "umap-learn": "0.6.0",
+      "torch": "2.15.0",
+      "gymnasium": "1.4.0"
+    }
+  }
+}

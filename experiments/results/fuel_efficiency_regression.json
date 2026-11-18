@@ -1,0 +1,51 @@
+{
+  "notebook": "fuel_efficiency_regression",
+  "family": "project",
+  "algorithm": "ridge",
+  "dataset": "auto_mpg",
+  "task": "regression",
+  "seed": 42,
+  "config": {
+    "selected_model": "ridge",
+    "ridge_alpha": 10,
+    "lasso_alpha": 0.001
+  },
+  "metrics": {
+    "test_MAE": 2.4530879628162188,
+    "test_MSE": 11.101679828794083,
+    "test_RMSE": 3.3319183406551374,
+    "test_R2": 0.7824930844418118,
+    "test_MAPE_percent": 11.873700308030427,
+    "baseline_RMSE": 7.209149783794176,
+    "cv_RMSE_mean": 3.436779306913615,
+    "cv_RMSE_std": 0.3161528173389585
+  },
+  "extra": {
+    "validation_RMSE": {
+      "dummy": 7.0013,
+      "linear": 2.8429,
+      "ridge": 2.8126,
+      "lasso": 2.8429,
+      "hist_gradient_boosting": 3.2359
+    }
+  },
+  "created": "2026-11-18T05:12:38+00:00",
+  "environment": {
+    "python": "3.13.18",
+    "platform": "Linux-6.18.44-fc-v595-x86_64-with-glibc2.39",
+    "cpu_count": 2,
+    "packages": {
+      "numpy": "2.5.3",
+      "pandas": "3.0.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "matplotlib": "3.11.2",
+      "xgboost": "3.4.1",
+      "lightgbm": "4.7.0",
+      "catboost": "1.2.10",
+      "umap-learn": "0.6.0",
+      "torch": "2.15.0",
+      "gymnasium": "1.4.0"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "notebook": "medical_classification",
+  "family": "project",
+  "algorithm": "svm_rbf",
+  "dataset": "breast_cancer",
+  "task": "classification",
+  "seed": 42,
+  "config": {
+    "selected_model": "svm_rbf",
+    "threshold": 0.8540549021449427,
+    "target_validation_sensitivity": 0.95
+  },
+  "metrics": {
+    "test_ROC_AUC": 0.9953703703703703,
+    "sensitivity": 0.8571428571428571,
+    "specificity": 1.0,
+    "false_negatives": 6,
+    "false_positives": 0,
+    "sensitivity_ci_low": 0.7346598639455783,
+    "sensitivity_ci_high": 0.9583333333333334,
+    "specificity_ci_low": 1.0,
+    "specificity_ci_high": 1.0
+  },
+  "extra": {
+    "validation_ROC_AUC": {
+      "logistic": 0.9957,
+      "svm_rbf": 0.9961,
+      "random_forest": 0.9918
+    },
+    "test_rows": 114
+  },
+  "created": "2026-11-18T05:12:45+00:00",
+  "environment": {
+    "python": "3.13.18",
+    "platform": "Linux-6.18.44-fc-v595-x86_64-with-glibc2.39",
+    "cpu_count": 2,
+    "packages": {
+      "numpy": "2.5.3",
+      "pandas": "3.0.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "matplotlib": "3.11.2",
+      "xgboost": "3.4.1",
+      "lightgbm": "4.7.0",
+      "catboost": "1.2.10",
+      "umap-learn": "0.6.0",
+      "torch": "2.15.0",
+      "gymnasium": "1.4.0"
+    }
+  }
+}

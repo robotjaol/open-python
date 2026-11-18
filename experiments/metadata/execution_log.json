@@ -178,5 +178,107 @@
     "status": "ok",
     "seconds": 6.7,
     "error": ""
+  },
+  "03_reinforcement_learning/01_tabular/dynamic_programming/01_dynamic_programming.ipynb": {
+    "notebook": "03_reinforcement_learning/01_tabular/dynamic_programming/01_dynamic_programming.ipynb",
+    "status": "ok",
+    "seconds": 11.0,
+    "error": ""
+  },
+  "03_reinforcement_learning/01_tabular/monte_carlo/02_monte_carlo.ipynb": {
+    "notebook": "03_reinforcement_learning/01_tabular/monte_carlo/02_monte_carlo.ipynb",
+    "status": "ok",
+    "seconds": 82.3,
+    "error": ""
+  },
+  "03_reinforcement_learning/01_tabular/q_learning/05_q_learning.ipynb": {
+    "notebook": "03_reinforcement_learning/01_tabular/q_learning/05_q_learning.ipynb",
+    "status": "ok",
+    "seconds": 197.9,
+    "error": ""
+  },
+  "03_reinforcement_learning/01_tabular/sarsa/04_sarsa.ipynb": {
+    "notebook": "03_reinforcement_learning/01_tabular/sarsa/04_sarsa.ipynb",
+    "status": "ok",
+    "seconds": 15.4,
+    "error": ""
+  },
+  "03_reinforcement_learning/01_tabular/temporal_difference/03_temporal_difference.ipynb": {
+    "notebook": "03_reinforcement_learning/01_tabular/temporal_difference/03_temporal_difference.ipynb",
+    "status": "ok",
+    "seconds": 23.1,
+    "error": ""
+  },
+  "03_reinforcement_learning/02_deep_value_methods/double_dqn/07_double_dqn.ipynb": {
+    "notebook": "03_reinforcement_learning/02_deep_value_methods/double_dqn/07_double_dqn.ipynb",
+    "status": "ok",
+    "seconds": 247.1,
+    "error": ""
+  },
+  "03_reinforcement_learning/02_deep_value_methods/dqn/06_dqn.ipynb": {
+    "notebook": "03_reinforcement_learning/02_deep_value_methods/dqn/06_dqn.ipynb",
+    "status": "ok",
+    "seconds": 243.1,
+    "error": ""
+  },
+  "05_end_to_end_projects/anomaly_screening/anomaly_screening.ipynb": {
+    "notebook": "05_end_to_end_projects/anomaly_screening/anomaly_screening.ipynb",
+    "status": "ok",
+    "seconds": 9.2,
+    "error": ""
+  },
+  "05_end_to_end_projects/autonomous_control/autonomous_control.ipynb": {
+    "notebook": "05_end_to_end_projects/autonomous_control/autonomous_control.ipynb",
+    "status": "ok",
+    "seconds": 66.7,
+    "error": ""
+  },
+  "05_end_to_end_projects/customer_churn/customer_churn.ipynb": {
+    "notebook": "05_end_to_end_projects/customer_churn/customer_churn.ipynb",
+    "status": "ok",
+    "seconds": 8.9,
+    "error": ""
+  },
+  "05_end_to_end_projects/customer_segmentation/customer_segmentation.ipynb": {
+    "notebook": "05_end_to_end_projects/customer_segmentation/customer_segmentation.ipynb",
+    "status": "ok",
+    "seconds": 11.9,
+    "error": ""
+  },
+  "05_end_to_end_projects/diabetes_interpretation/diabetes_interpretation.ipynb": {
+    "notebook": "05_end_to_end_projects/diabetes_interpretation/diabetes_interpretation.ipynb",
+    "status": "ok",
+    "seconds": 5.2,
+    "error": ""
+  },
+  "05_end_to_end_projects/digit_recognition/digit_recognition.ipynb": {
+    "notebook": "05_end_to_end_projects/digit_recognition/digit_recognition.ipynb",
+    "status": "ok",
+    "seconds": 6.8,
+    "error": ""
+  },
+  "05_end_to_end_projects/fuel_efficiency_regression/fuel_efficiency_regression.ipynb": {
+    "notebook": "05_end_to_end_projects/fuel_efficiency_regression/fuel_efficiency_regression.ipynb",
+    "status": "ok",
+    "seconds": 5.5,
+    "error": ""
+  },
+  "05_end_to_end_projects/medical_classification/medical_classification.ipynb": {
+    "notebook": "05_end_to_end_projects/medical_classification/medical_classification.ipynb",
+    "status": "ok",
+    "seconds": 7.8,
+    "error": ""
+  },
+  "05_end_to_end_projects/tabular_model_benchmark/tabular_model_benchmark.ipynb": {
+    "notebook": "05_end_to_end_projects/tabular_model_benchmark/tabular_model_benchmark.ipynb",
+    "status": "ok",
+    "seconds": 42.2,
+    "error": ""
+  },
+  "05_end_to_end_projects/wine_authentication/wine_authentication.ipynb": {
+    "notebook": "05_end_to_end_projects/wine_authentication/wine_authentication.ipynb",
+    "status": "ok",
+    "seconds": 21.0,
+    "error": ""
   }
 }

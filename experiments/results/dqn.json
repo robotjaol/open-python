@@ -1,0 +1,56 @@
+{
+  "notebook": "dqn",
+  "family": "reinforcement_learning",
+  "algorithm": "DQN",
+  "dataset": "CartPole-v1",
+  "task": "control",
+  "seed": 42,
+  "config": {
+    "total_steps": 20000,
+    "lr": 0.001,
+    "buffer_size": 20000,
+    "batch": 64,
+    "target_every": 250,
+    "gamma": 0.99,
+    "seeds": 3
+  },
+  "metrics": {
+    "eval_mean_return": 353.9666666666667,
+    "eval_std_across_seeds": 242.78975129385785,
+    "eval_min_seed": 73.7,
+    "eval_max_seed": 500.0,
+    "random_policy_mean_return": 21.7,
+    "share_of_seeds_solved": 0.6666666666666666
+  },
+  "extra": {
+    "per_seed_eval_return": [
+      500.0,
+      488.2,
+      73.7
+    ],
+    "training_steps_per_seed": [
+      19787,
+      19938,
+      19940
+    ]
+  },
+  "created": "2026-11-18T05:03:39+00:00",
+  "environment": {
+    "python": "3.13.18",
+    "platform": "Linux-6.18.44-fc-v595-x86_64-with-glibc2.39",
+    "cpu_count": 2,
+    "packages": {
+      "numpy": "2.5.3",
+      "pandas": "3.0.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "matplotlib": "3.11.2",
+      "xgboost": "3.4.1",
+      "lightgbm": "4.7.0",
+      "catboost": "1.2.10",
+      "umap-learn": "0.6.0",
+      "torch": "2.15.0",
+      "gymnasium": "1.4.0"
+    }
+  }
+}

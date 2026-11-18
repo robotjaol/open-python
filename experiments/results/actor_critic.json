@@ -1,0 +1,54 @@
+{
+  "notebook": "actor_critic",
+  "family": "reinforcement_learning",
+  "algorithm": "ActorCritic",
+  "dataset": "CartPole-v1",
+  "task": "control",
+  "seed": 42,
+  "config": {
+    "total_steps": 60000,
+    "lr_actor": 0.001,
+    "lr_critic": 0.005,
+    "gamma": 0.99,
+    "seeds": 3
+  },
+  "metrics": {
+    "eval_mean_return": 114.61666666666666,
+    "eval_std_across_seeds": 182.15400992932692,
+    "eval_min_seed": 9.45,
+    "eval_max_seed": 324.95,
+    "random_policy_mean_return": 21.7,
+    "share_of_seeds_solved": 0.0
+  },
+  "extra": {
+    "per_seed_eval_return": [
+      9.45,
+      9.45,
+      324.95
+    ],
+    "training_steps_per_seed": [
+      59997,
+      59998,
+      59976
+    ]
+  },
+  "created": "2026-11-18T05:10:50+00:00",
+  "environment": {
+    "python": "3.13.18",
+    "platform": "Linux-6.18.44-fc-v595-x86_64-with-glibc2.39",
+    "cpu_count": 2,
+    "packages": {
+      "numpy": "2.5.3",
+      "pandas": "3.0.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "matplotlib": "3.11.2",
+      "xgboost": "3.4.1",
+      "lightgbm": "4.7.0",
+      "catboost": "1.2.10",
+      "umap-learn": "0.6.0",
+      "torch": "2.15.0",
+      "gymnasium": "1.4.0"
+    }
+  }
+}

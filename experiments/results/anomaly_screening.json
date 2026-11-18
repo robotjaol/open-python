@@ -1,0 +1,72 @@
+{
+  "notebook": "anomaly_screening",
+  "family": "project",
+  "algorithm": "IsolationForest, LOF, OneClassSVM",
+  "dataset": "breast_cancer",
+  "task": "anomaly_detection",
+  "seed": 42,
+  "config": {
+    "repetitions": 30,
+    "anomaly_share": 0.05,
+    "test_size": 0.3
+  },
+  "metrics": {
+    "isolation_forest_ROC_AUC_mean": 0.9572222222222223,
+    "isolation_forest_ROC_AUC_std": 0.036730371533513315,
+    "isolation_forest_PR_AUC_mean": 0.6758484957241815,
+    "isolation_forest_PR_AUC_std": 0.1823664519706592,
+    "lof_ROC_AUC_mean": 0.9442592592592594,
+    "lof_ROC_AUC_std": 0.04388038727601996,
+    "lof_PR_AUC_mean": 0.5806510082837995,
+    "lof_PR_AUC_std": 0.17614730629019207,
+    "one_class_svm_ROC_AUC_mean": 0.9085802469135804,
+    "one_class_svm_ROC_AUC_std": 0.052831207597628944,
+    "one_class_svm_PR_AUC_mean": 0.4102466935502563,
+    "one_class_svm_PR_AUC_std": 0.13218097128141537,
+    "random_PR_AUC": 0.047619047619047616
+  },
+  "extra": {
+    "summary": [
+      {
+        "index": "isolation_forest",
+        "ROC_AUC_mean": 0.9572,
+        "ROC_AUC_std": 0.0367,
+        "PR_AUC_mean": 0.6758,
+        "PR_AUC_std": 0.1824
+      },
+      {
+        "index": "lof",
+        "ROC_AUC_mean": 0.9443,
+        "ROC_AUC_std": 0.0439,
+        "PR_AUC_mean": 0.5807,
+        "PR_AUC_std": 0.1761
+      },
+      {
+        "index": "one_class_svm",
+        "ROC_AUC_mean": 0.9086,
+        "ROC_AUC_std": 0.0528,
+        "PR_AUC_mean": 0.4102,
+        "PR_AUC_std": 0.1322
+      }
+    ]
+  },
+  "created": "2026-11-18T05:14:53+00:00",
+  "environment": {
+    "python": "3.13.18",
+    "platform": "Linux-6.18.44-fc-v595-x86_64-with-glibc2.39",
+    "cpu_count": 2,
+    "packages": {
+      "numpy": "2.5.3",
+      "pandas": "3.0.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "matplotlib": "3.11.2",
+      "xgboost": "3.4.1",
+      "lightgbm": "4.7.0",
+      "catboost": "1.2.10",
+      "umap-learn": "0.6.0",
+      "torch": "2.15.0",
+      "gymnasium": "1.4.0"
+    }
+  }
+}

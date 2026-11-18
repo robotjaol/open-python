@@ -1,0 +1,78 @@
+{
+  "notebook": "temporal_difference",
+  "family": "reinforcement_learning",
+  "algorithm": "TD0",
+  "dataset": "FrozenLake-v1",
+  "task": "control",
+  "seed": 42,
+  "config": {
+    "episodes": 3000,
+    "alphas": [
+      0.01,
+      0.05,
+      0.2
+    ],
+    "best": "TD(0) alpha=0.05",
+    "seeds": 5
+  },
+  "metrics": {
+    "all_zero_rmse": 0.8133441954589871,
+    "best_final_rmse": 0.028108240535985755,
+    "best_final_rmse_std": 0.008808023698838117,
+    "td_alpha_0.05_rmse": 0.028108240535985755,
+    "mc_alpha_0.05_rmse": 0.2925616018717581
+  },
+  "extra": {
+    "final_table": [
+      {
+        "index": "TD(0) alpha=0.01",
+        "rmse_mean": 0.18715,
+        "rmse_std": 0.00537
+      },
+      {
+        "index": "TD(0) alpha=0.05",
+        "rmse_mean": 0.02811,
+        "rmse_std": 0.00881
+      },
+      {
+        "index": "TD(0) alpha=0.2",
+        "rmse_mean": 0.05581,
+        "rmse_std": 0.02142
+      },
+      {
+        "index": "MC alpha=0.01",
+        "rmse_mean": 0.25233,
+        "rmse_std": 0.05202
+      },
+      {
+        "index": "MC alpha=0.05",
+        "rmse_mean": 0.29256,
+        "rmse_std": 0.09116
+      },
+      {
+        "index": "MC alpha=0.2",
+        "rmse_mean": 0.40155,
+        "rmse_std": 0.1302
+      }
+    ]
+  },
+  "created": "2026-11-18T04:58:29+00:00",
+  "environment": {
+    "python": "3.13.18",
+    "platform": "Linux-6.18.44-fc-v595-x86_64-with-glibc2.39",
+    "cpu_count": 2,
+    "packages": {
+      "numpy": "2.5.3",
+      "pandas": "3.0.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "matplotlib": "3.11.2",
+      "xgboost": "3.4.1",
+      "lightgbm": "4.7.0",
+      "catboost": "1.2.10",
+      "umap-learn": "0.6.0",
+      "torch": "2.15.0",
+      "gymnasium": "1.4.0"
+    }
+  }
+}

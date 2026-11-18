@@ -1,0 +1,67 @@
+{
+  "notebook": "dynamic_programming",
+  "family": "reinforcement_learning",
+  "algorithm": "ValueIteration",
+  "dataset": "FrozenLake-v1",
+  "task": "control",
+  "seed": 42,
+  "config": {
+    "gamma": 0.99,
+    "theta": 1e-10,
+    "maps": [
+      "4x4",
+      "8x8"
+    ]
+  },
+  "metrics": {
+    "exact_success_optimal_4x4": 0.8235294100658614,
+    "simulated_success_optimal_4x4": 0.7286,
+    "exact_success_random_4x4": 0.013939796242315804,
+    "VI_sweeps_4x4": 420,
+    "PI_rounds_4x4": 7,
+    "exact_success_optimal_8x8": 0.8938406092836166,
+    "simulated_success_optimal_8x8": 0.6254,
+    "exact_success_random_8x8": 0.0019037133490847503,
+    "VI_sweeps_8x8": 440,
+    "PI_rounds_8x8": 11
+  },
+  "extra": {
+    "optimal_policy_4x4": [
+      0,
+      3,
+      3,
+      3,
+      0,
+      0,
+      0,
+      0,
+      3,
+      1,
+      0,
+      0,
+      0,
+      2,
+      1,
+      0
+    ]
+  },
+  "created": "2026-11-18T04:53:11+00:00",
+  "environment": {
+    "python": "3.13.18",
+    "platform": "Linux-6.18.44-fc-v595-x86_64-with-glibc2.39",
+    "cpu_count": 2,
+    "packages": {
+      "numpy": "2.5.3",
+      "pandas": "3.0.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "matplotlib": "3.11.2",
+      "xgboost": "3.4.1",
+      "lightgbm": "4.7.0",
+      "catboost": "1.2.10",
+      "umap-learn": "0.6.0",
+      "torch": "2.15.0",
+      "gymnasium": "1.4.0"
+    }
+  }
+}

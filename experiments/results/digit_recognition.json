@@ -1,0 +1,47 @@
+{
+  "notebook": "digit_recognition",
+  "family": "project",
+  "algorithm": "svm_rbf",
+  "dataset": "digits",
+  "task": "classification",
+  "seed": 42,
+  "config": {
+    "selected_model": "svm_rbf"
+  },
+  "metrics": {
+    "test_accuracy": 0.9805555555555555,
+    "test_macro_F1": 0.9805015284652674,
+    "baseline_accuracy": 0.1,
+    "cv_macro_F1_mean": 0.9826337216032327,
+    "cv_macro_F1_std": 0.007985293316529224
+  },
+  "extra": {
+    "validation_macro_F1": {
+      "logistic": 0.9724,
+      "knn": 0.964,
+      "svm_rbf": 0.9916,
+      "random_forest": 0.9779,
+      "mlp": 0.947
+    },
+    "test_rows": 360
+  },
+  "created": "2026-11-18T05:12:32+00:00",
+  "environment": {
+    "python": "3.13.18",
+    "platform": "Linux-6.18.44-fc-v595-x86_64-with-glibc2.39",
+    "cpu_count": 2,
+    "packages": {
+      "numpy": "2.5.3",
+      "pandas": "3.0.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "matplotlib": "3.11.2",
+      "xgboost": "3.4.1",
+      "lightgbm": "4.7.0",
+      "catboost": "1.2.10",
+      "umap-learn": "0.6.0",
+      "torch": "2.15.0",
+      "gymnasium": "1.4.0"
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "notebook": "autonomous_control",
+  "family": "project",
+  "algorithm": "PPO",
+  "dataset": "CartPole-v1",
+  "task": "control",
+  "seed": 42,
+  "config": {
+    "algorithm": "PPO",
+    "total_steps": 40960,
+    "seeds": 3,
+    "eval_episodes": 30
+  },
+  "metrics": {
+    "clean_random": 21.033333333333335,
+    "clean_heuristic": 500.0,
+    "clean_ppo_mean": 496.59999999999997,
+    "clean_ppo_std_across_seeds": 5.8889727457341765,
+    "observation_noise_0.05_random": 23.933333333333334,
+    "observation_noise_0.05_heuristic": 436.8,
+    "observation_noise_0.05_ppo_mean": 500.0,
+    "observation_noise_0.05_ppo_std_across_seeds": 0.0,
+    "observation_noise_0.1_random": 22.2,
+    "observation_noise_0.1_heuristic": 343.8333333333333,
+    "observation_noise_0.1_ppo_mean": 499.22222222222223,
+    "observation_noise_0.1_ppo_std_across_seeds": 1.347150628109116,
+    "action_flip_10pct_random": 24.4,
+    "action_flip_10pct_heuristic": 411.53333333333336,
+    "action_flip_10pct_ppo_mean": 497.68888888888887,
+    "action_flip_10pct_ppo_std_across_seeds": 4.0029618663814075
+  },
+  "extra": {
+    "table": [
+      {
+        "index": "clean",
+        "random": 21.03,
+        "heuristic": 500.0,
+        "ppo_mean": 496.6,
+        "ppo_std_across_seeds": 5.89
+      },
+      {
+        "index": "observation noise 0.05",
+        "random": 23.93,
+        "heuristic": 436.8,
+        "ppo_mean": 500.0,
+        "ppo_std_across_seeds": 0.0
+      },
+      {
+        "index": "observation noise 0.1",
+        "random": 22.2,
+        "heuristic": 343.83,
+        "ppo_mean": 499.22,
+        "ppo_std_across_seeds": 1.35
+      },
+      {
+        "index": "action flip 10%",
+        "random": 24.4,
+        "heuristic": 411.53,
+        "ppo_mean": 497.69,
+        "ppo_std_across_seeds": 4.0
+      }
+    ]
+  },
+  "created": "2026-11-18T05:12:00+00:00",
+  "environment": {
+    "python": "3.13.18",
+    "platform": "Linux-6.18.44-fc-v595-x86_64-with-glibc2.39",
+    "cpu_count": 2,
+    "packages": {
+      "numpy": "2.5.3",
+      "pandas": "3.0.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "matplotlib": "3.11.2",
+      "xgboost": "3.4.1",
+      "lightgbm": "4.7.0",
+      "catboost": "1.2.10",
+      "umap-learn": "0.6.0",
+      "torch": "2.15.0",
+      "gymnasium": "1.4.0"
+    }
+  }
+}
