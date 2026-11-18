@@ -1,0 +1,57 @@
+{
+  "notebook": "isolation_forest",
+  "family": "unsupervised",
+  "algorithm": "IsolationForest",
+  "dataset": "breast_cancer",
+  "task": "clustering",
+  "seed": 42,
+  "config": {
+    "n_estimators": 300,
+    "anomaly_share": 0.05
+  },
+  "metrics": {
+    "ROC_AUC": 0.9833333333333334,
+    "PR_AUC": 0.7642857142857142,
+    "PR_AUC_random": 0.04424778761061947,
+    "ROC_AUC_LOF": 0.975925925925926,
+    "ROC_AUC_boot_low": 0.9507710280373832,
+    "ROC_AUC_boot_high": 1.0
+  },
+  "extra": {
+    "test_rows": 113,
+    "test_anomalies": 5,
+    "stability": [
+      {
+        "n_estimators": 25,
+        "rank_correlation_between_seeds": 0.7665
+      },
+      {
+        "n_estimators": 100,
+        "rank_correlation_between_seeds": 0.9323
+      },
+      {
+        "n_estimators": 300,
+        "rank_correlation_between_seeds": 0.9884
+      }
+    ]
+  },
+  "created": "2026-11-18T04:47:42+00:00",
+  "environment": {
+    "python": "3.13.18",
+    "platform": "Linux-6.18.44-fc-v595-x86_64-with-glibc2.39",
+    "cpu_count": 2,
+    "packages": {
+      "numpy": "2.5.3",
+      "pandas": "3.0.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "matplotlib": "3.11.2",
+      "xgboost": "3.4.1",
+      "lightgbm": "4.7.0",
+      "catboost": "1.2.10",
+      "umap-learn": "0.6.0",
+      "torch": "2.15.0",
+      "gymnasium": "1.4.0"
+    }
+  }
+}

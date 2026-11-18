@@ -1,0 +1,49 @@
+{
+  "notebook": "hierarchical_clustering",
+  "family": "unsupervised",
+  "algorithm": "AgglomerativeClustering",
+  "dataset": "wine",
+  "task": "clustering",
+  "seed": 42,
+  "config": {
+    "linkage": "ward",
+    "k": 3
+  },
+  "metrics": {
+    "clusters": 3,
+    "noise_fraction": 0.0,
+    "Silhouette": 0.2774439826952266,
+    "Davies_Bouldin": 1.4185919431857326,
+    "Calinski_Harabasz": 67.6474675044098,
+    "ARI": 0.7899332213582837,
+    "NMI": 0.7864652657004839,
+    "cophenetic_ward": 0.6623487206613262
+  },
+  "extra": {
+    "cophenetic": {
+      "single": 0.5436231199247621,
+      "complete": 0.5916829459078577,
+      "average": 0.7590840545998377,
+      "ward": 0.6623487206613262
+    }
+  },
+  "created": "2026-11-18T04:46:04+00:00",
+  "environment": {
+    "python": "3.13.18",
+    "platform": "Linux-6.18.44-fc-v595-x86_64-with-glibc2.39",
+    "cpu_count": 2,
+    "packages": {
+      "numpy": "2.5.3",
+      "pandas": "3.0.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "matplotlib": "3.11.2",
+      "xgboost": "3.4.1",
+      "lightgbm": "4.7.0",
+      "catboost": "1.2.10",
+      "umap-learn": "0.6.0",
+      "torch": "2.15.0",
+      "gymnasium": "1.4.0"
+    }
+  }
+}

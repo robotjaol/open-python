@@ -1,0 +1,147 @@
+{
+  "notebook": "dbscan",
+  "family": "unsupervised",
+  "algorithm": "DBSCAN",
+  "dataset": "digits",
+  "task": "clustering",
+  "seed": 42,
+  "config": {
+    "eps": 13.0,
+    "min_samples": 10,
+    "pca_components": 10
+  },
+  "metrics": {
+    "clusters": 12,
+    "noise_fraction": 0.25876460767946574,
+    "Silhouette": 0.2700006067992802,
+    "Davies_Bouldin": 1.2293066708966343,
+    "Calinski_Harabasz": 210.98829982122788,
+    "ARI_nonnoise": 0.8061812448904538,
+    "NMI_nonnoise": 0.9021270784395993
+  },
+  "extra": {
+    "sweep": [
+      {
+        "eps": 8.0,
+        "clusters": 2,
+        "noise": 0.9766,
+        "silhouette": 0.7398
+      },
+      {
+        "eps": 9.0,
+        "clusters": 8,
+        "noise": 0.892,
+        "silhouette": 0.596
+      },
+      {
+        "eps": 10.0,
+        "clusters": 11,
+        "noise": 0.7529,
+        "silhouette": 0.4716
+      },
+      {
+        "eps": 11.0,
+        "clusters": 14,
+        "noise": 0.5943,
+        "silhouette": 0.4347
+      },
+      {
+        "eps": 12.0,
+        "clusters": 14,
+        "noise": 0.4101,
+        "silhouette": 0.3554
+      },
+      {
+        "eps": 13.0,
+        "clusters": 12,
+        "noise": 0.2588,
+        "silhouette": 0.27
+      },
+      {
+        "eps": 14.0,
+        "clusters": 9,
+        "noise": 0.138,
+        "silhouette": 0.1619
+      },
+      {
+        "eps": 15.0,
+        "clusters": 6,
+        "noise": 0.0679,
+        "silhouette": 0.1101
+      },
+      {
+        "eps": 16.0,
+        "clusters": 2,
+        "noise": 0.0317,
+        "silhouette": 0.1126
+      },
+      {
+        "eps": 17.0,
+        "clusters": 2,
+        "noise": 0.0161,
+        "silhouette": 0.112
+      },
+      {
+        "eps": 18.0,
+        "clusters": 2,
+        "noise": 0.0033,
+        "silhouette": 0.0564
+      },
+      {
+        "eps": 19.0,
+        "clusters": 1,
+        "noise": 0.0022,
+        "silhouette": NaN
+      },
+      {
+        "eps": 20.0,
+        "clusters": 1,
+        "noise": 0.0,
+        "silhouette": NaN
+      },
+      {
+        "eps": 21.0,
+        "clusters": 1,
+        "noise": 0.0,
+        "silhouette": NaN
+      },
+      {
+        "eps": 22.0,
+        "clusters": 1,
+        "noise": 0.0,
+        "silhouette": NaN
+      },
+      {
+        "eps": 23.0,
+        "clusters": 1,
+        "noise": 0.0,
+        "silhouette": NaN
+      },
+      {
+        "eps": 24.0,
+        "clusters": 1,
+        "noise": 0.0,
+        "silhouette": NaN
+      }
+    ]
+  },
+  "created": "2026-11-18T04:45:48+00:00",
+  "environment": {
+    "python": "3.13.18",
+    "platform": "Linux-6.18.44-fc-v595-x86_64-with-glibc2.39",
+    "cpu_count": 2,
+    "packages": {
+      "numpy": "2.5.3",
+      "pandas": "3.0.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "matplotlib": "3.11.2",
+      "xgboost": "3.4.1",
+      "lightgbm": "4.7.0",
+      "catboost": "1.2.10",
+      "umap-learn": "0.6.0",
+      "torch": "2.15.0",
+      "gymnasium": "1.4.0"
+    }
+  }
+}

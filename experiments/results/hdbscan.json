@@ -1,0 +1,75 @@
+{
+  "notebook": "hdbscan",
+  "family": "unsupervised",
+  "algorithm": "HDBSCAN",
+  "dataset": "digits",
+  "task": "clustering",
+  "seed": 42,
+  "config": {
+    "min_cluster_size": 15,
+    "pca_components": 10
+  },
+  "metrics": {
+    "clusters": 7,
+    "noise_fraction": 0.44407345575959933,
+    "Silhouette": 0.3195171848950498,
+    "Davies_Bouldin": 1.2929713746851372,
+    "Calinski_Harabasz": 225.15193521559723,
+    "ARI_nonnoise": 0.6531780219470819,
+    "NMI_nonnoise": 0.8520178119904475
+  },
+  "extra": {
+    "sweep": [
+      {
+        "min_cluster_size": 10,
+        "clusters": 14,
+        "noise": 0.4636,
+        "silhouette": 0.3879
+      },
+      {
+        "min_cluster_size": 15,
+        "clusters": 7,
+        "noise": 0.4441,
+        "silhouette": 0.3195
+      },
+      {
+        "min_cluster_size": 20,
+        "clusters": 6,
+        "noise": 0.4558,
+        "silhouette": 0.3209
+      },
+      {
+        "min_cluster_size": 30,
+        "clusters": 7,
+        "noise": 0.5698,
+        "silhouette": 0.4192
+      },
+      {
+        "min_cluster_size": 50,
+        "clusters": 6,
+        "noise": 0.6789,
+        "silhouette": 0.4942
+      }
+    ],
+    "mean_probability": 0.8951214219097442
+  },
+  "created": "2026-11-18T04:45:59+00:00",
+  "environment": {
+    "python": "3.13.18",
+    "platform": "Linux-6.18.44-fc-v595-x86_64-with-glibc2.39",
+    "cpu_count": 2,
+    "packages": {
+      "numpy": "2.5.3",
+      "pandas": "3.0.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "matplotlib": "3.11.2",
+      "xgboost": "3.4.1",
+      "lightgbm": "4.7.0",
+      "catboost": "1.2.10",
+      "umap-learn": "0.6.0",
+      "torch": "2.15.0",
+      "gymnasium": "1.4.0"
+    }
+  }
+}

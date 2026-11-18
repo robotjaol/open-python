@@ -1,0 +1,52 @@
+{
+  "notebook": "pca",
+  "family": "unsupervised",
+  "algorithm": "PCA",
+  "dataset": "breast_cancer",
+  "task": "dimensionality_reduction",
+  "seed": 42,
+  "config": {
+    "variance_target": 0.95,
+    "scaled": true
+  },
+  "metrics": {
+    "components": 10,
+    "variance_explained": 0.9521106855408851,
+    "heldout_reconstruction_MSE": 0.05021704309936514,
+    "F1_full_features": 0.96,
+    "F1_on_components": 0.96
+  },
+  "extra": {
+    "cumulative_variance": [
+      0.43692469724820254,
+      0.6291885283550762,
+      0.7266358034087429,
+      0.7933389679127779,
+      0.8494024578972231,
+      0.8899203680583865,
+      0.9116710228177689,
+      0.9275004841004943,
+      0.9402292762133784,
+      0.9521106855408851
+    ]
+  },
+  "created": "2026-11-18T04:46:22+00:00",
+  "environment": {
+    "python": "3.13.18",
+    "platform": "Linux-6.18.44-fc-v595-x86_64-with-glibc2.39",
+    "cpu_count": 2,
+    "packages": {
+      "numpy": "2.5.3",
+      "pandas": "3.0.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "matplotlib": "3.11.2",
+      "xgboost": "3.4.1",
+      "lightgbm": "4.7.0",
+      "catboost": "1.2.10",
+      "umap-learn": "0.6.0",
+      "torch": "2.15.0",
+      "gymnasium": "1.4.0"
+    }
+  }
+}

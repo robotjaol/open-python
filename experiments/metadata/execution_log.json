@@ -118,5 +118,65 @@
     "status": "ok",
     "seconds": 17.7,
     "error": ""
+  },
+  "02_unsupervised_learning/01_clustering/dbscan/03_dbscan.ipynb": {
+    "notebook": "02_unsupervised_learning/01_clustering/dbscan/03_dbscan.ipynb",
+    "status": "ok",
+    "seconds": 6.3,
+    "error": ""
+  },
+  "02_unsupervised_learning/01_clustering/gaussian_mixture/05_gaussian_mixture.ipynb": {
+    "notebook": "02_unsupervised_learning/01_clustering/gaussian_mixture/05_gaussian_mixture.ipynb",
+    "status": "ok",
+    "seconds": 5.0,
+    "error": ""
+  },
+  "02_unsupervised_learning/01_clustering/hdbscan/04_hdbscan.ipynb": {
+    "notebook": "02_unsupervised_learning/01_clustering/hdbscan/04_hdbscan.ipynb",
+    "status": "ok",
+    "seconds": 5.5,
+    "error": ""
+  },
+  "02_unsupervised_learning/01_clustering/hierarchical_clustering/02_hierarchical_clustering.ipynb": {
+    "notebook": "02_unsupervised_learning/01_clustering/hierarchical_clustering/02_hierarchical_clustering.ipynb",
+    "status": "ok",
+    "seconds": 4.8,
+    "error": ""
+  },
+  "02_unsupervised_learning/01_clustering/kmeans/01_kmeans.ipynb": {
+    "notebook": "02_unsupervised_learning/01_clustering/kmeans/01_kmeans.ipynb",
+    "status": "ok",
+    "seconds": 5.0,
+    "error": ""
+  },
+  "02_unsupervised_learning/01_clustering/spectral_clustering/06_spectral_clustering.ipynb": {
+    "notebook": "02_unsupervised_learning/01_clustering/spectral_clustering/06_spectral_clustering.ipynb",
+    "status": "ok",
+    "seconds": 8.3,
+    "error": ""
+  },
+  "02_unsupervised_learning/02_dimensionality_reduction/pca/07_pca.ipynb": {
+    "notebook": "02_unsupervised_learning/02_dimensionality_reduction/pca/07_pca.ipynb",
+    "status": "ok",
+    "seconds": 4.8,
+    "error": ""
+  },
+  "02_unsupervised_learning/02_dimensionality_reduction/tsne/08_tsne.ipynb": {
+    "notebook": "02_unsupervised_learning/02_dimensionality_reduction/tsne/08_tsne.ipynb",
+    "status": "ok",
+    "seconds": 35.1,
+    "error": ""
+  },
+  "02_unsupervised_learning/02_dimensionality_reduction/umap/09_umap.ipynb": {
+    "notebook": "02_unsupervised_learning/02_dimensionality_reduction/umap/09_umap.ipynb",
+    "status": "ok",
+    "seconds": 38.9,
+    "error": ""
+  },
+  "02_unsupervised_learning/03_anomaly_detection/isolation_forest/10_isolation_forest.ipynb": {
+    "notebook": "02_unsupervised_learning/03_anomaly_detection/isolation_forest/10_isolation_forest.ipynb",
+    "status": "ok",
+    "seconds": 6.7,
+    "error": ""
   }
 }

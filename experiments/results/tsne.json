@@ -1,0 +1,62 @@
+{
+  "notebook": "tsne",
+  "family": "unsupervised",
+  "algorithm": "TSNE",
+  "dataset": "digits",
+  "task": "clustering",
+  "seed": 42,
+  "config": {
+    "perplexity": 15,
+    "init": "pca",
+    "pca_components": 30
+  },
+  "metrics": {
+    "trustworthiness": 0.9932909044309512,
+    "trustworthiness_pca2": 0.8319682709402314,
+    "knn_accuracy_in_map": 0.9771974620860415,
+    "knn_accuracy_pca2": 0.6032482203652121
+  },
+  "extra": {
+    "sweep": [
+      {
+        "perplexity": 5,
+        "trustworthiness": 0.9918,
+        "kl_divergence": 0.9336
+      },
+      {
+        "perplexity": 15,
+        "trustworthiness": 0.9933,
+        "kl_divergence": 0.8477
+      },
+      {
+        "perplexity": 30,
+        "trustworthiness": 0.9932,
+        "kl_divergence": 0.7444
+      },
+      {
+        "perplexity": 50,
+        "trustworthiness": 0.9921,
+        "kl_divergence": 0.6702
+      }
+    ]
+  },
+  "created": "2026-11-18T04:46:41+00:00",
+  "environment": {
+    "python": "3.13.18",
+    "platform": "Linux-6.18.44-fc-v595-x86_64-with-glibc2.39",
+    "cpu_count": 2,
+    "packages": {
+      "numpy": "2.5.3",
+      "pandas": "3.0.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "matplotlib": "3.11.2",
+      "xgboost": "3.4.1",
+      "lightgbm": "4.7.0",
+      "catboost": "1.2.10",
+      "umap-learn": "0.6.0",
+      "torch": "2.15.0",
+      "gymnasium": "1.4.0"
+    }
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "notebook": "gaussian_mixture",
+  "family": "unsupervised",
+  "algorithm": "GaussianMixture",
+  "dataset": "auto_mpg",
+  "task": "clustering",
+  "seed": 42,
+  "config": {
+    "k": 7,
+    "covariance_type": "tied",
+    "n_init": 5
+  },
+  "metrics": {
+    "clusters": 7,
+    "noise_fraction": 0.0,
+    "Silhouette": 0.137030184556012,
+    "Davies_Bouldin": 1.3634268487871033,
+    "Calinski_Harabasz": 166.7261822917548,
+    "ARI": 0.06705734681839827,
+    "NMI": 0.22985107458677573,
+    "BIC": -1041.5593016151206,
+    "mean_max_responsibility": 0.9635609022930579
+  },
+  "extra": {
+    "bic_grid": [
+      {
+        "covariance": "full",
+        "k": 1,
+        "BIC": 3994.41,
+        "AIC": 3887.18
+      },
+      {
+        "covariance": "full",
+        "k": 2,
+        "BIC": 2358.59,
+        "AIC": 2140.17
+      },
+      {
+        "covariance": "full",
+        "k": 3,
+        "BIC": -152.54,
+        "AIC": -482.16
+      },
+      {
+        "covariance": "full",
+        "k": 4,
+        "BIC": -335.66,
+        "AIC": -776.47
+      },
+      {
+        "covariance": "full",
+        "k": 5,
+        "BIC": -1015.73,
+        "AIC": -1567.74
+      },
+      {
+        "covariance": "full",
+        "k": 6,
+        "BIC": -1007.75,
+        "AIC": -1670.95
+      },
+      {
+        "covariance": "full",
+        "k": 7,
+        "BIC": -908.77,
+        "AIC": -1683.16
+      },
+      {
+        "covariance": "full",
+        "k": 8,
+        "BIC": -860.29,
+        "AIC": -1745.88
+      },
+      {
+        "covariance": "tied",
+        "k": 1,
+        "BIC": 3994.41,
+        "AIC": 3887.18
+      },
+      {
+        "covariance": "tied",
+        "k": 2,
+        "BIC": 3723.38,
+        "AIC": 3588.35
+      },
+      {
+        "covariance": "tied",
+        "k": 3,
+        "BIC": 2788.53,
+        "AIC": 2625.71
+      },
+      {
+        "covariance": "tied",
+        "k": 4,
+        "BIC": 2707.79,
+        "AIC": 2517.17
+      },
+      {
+        "covariance": "tied",
+        "k": 5,
+        "BIC": 2637.17,
+        "AIC": 2418.75
+      },
+      {
+        "covariance": "tied",
+        "k": 6,
+        "BIC": 2541.35,
+        "AIC": 2295.13
+      },
+      {
+        "covariance": "tied",
+        "k": 7,
+        "BIC": -1041.56,
+        "AIC": -1315.58
+      },
+      {
+        "covariance": "tied",
+        "k": 8,
+        "BIC": -836.63,
+        "AIC": -1138.45
+      },
+      {
+        "covariance": "diag",
+        "k": 1,
+        "BIC": 6746.34,
+        "AIC": 6698.69
+      },
+      {
+        "covariance": "diag",
+        "k": 2,
+        "BIC": 3748.82,
+        "AIC": 3649.54
+      },
+      {
+        "covariance": "diag",
+        "k": 3,
+        "BIC": 623.88,
+        "AIC": 472.97
+      },
+      {
+        "covariance": "diag",
+        "k": 4,
+        "BIC": -385.48,
+        "AIC": -588.01
+      },
+      {
+        "covariance": "diag",
+        "k": 5,
+        "BIC": -465.57,
+        "AIC": -719.73
+      },
+      {
+        "covariance": "diag",
+        "k": 6,
+        "BIC": -721.09,
+        "AIC": -1026.88
+      },
+      {
+        "covariance": "diag",
+        "k": 7,
+        "BIC": -799.86,
+        "AIC": -1157.28
+      },
+      {
+        "covariance": "diag",
+        "k": 8,
+        "BIC": -806.5,
+        "AIC": -1215.54
+      },
+      {
+        "covariance": "spherical",
+        "k": 1,
+        "BIC": 6716.49,
+        "AIC": 6688.69
+      },
+      {
+        "covariance": "spherical",
+        "k": 2,
+        "BIC": 5293.94,
+        "AIC": 5234.37
+      },
+      {
+        "covariance": "spherical",
+        "k": 3,
+        "BIC": 5000.55,
+        "AIC": 4909.21
+      },
+      {
+        "covariance": "spherical",
+        "k": 4,
+        "BIC": 4778.0,
+        "AIC": 4654.89
+      },
+      {
+        "covariance": "spherical",
+        "k": 5,
+        "BIC": 4580.5,
+        "AIC": 4425.63
+      },
+      {
+        "covariance": "spherical",
+        "k": 6,
+        "BIC": 4480.92,
+        "AIC": 4294.27
+      },
+      {
+        "covariance": "spherical",
+        "k": 7,
+        "BIC": 4397.9,
+        "AIC": 4179.48
+      },
+      {
+        "covariance": "spherical",
+        "k": 8,
+        "BIC": 4287.28,
+        "AIC": 4037.09
+      }
+    ]
+  },
+  "created": "2026-11-18T04:45:54+00:00",
+  "environment": {
+    "python": "3.13.18",
+    "platform": "Linux-6.18.44-fc-v595-x86_64-with-glibc2.39",
+    "cpu_count": 2,
+    "packages": {
+      "numpy": "2.5.3",
+      "pandas": "3.0.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "matplotlib": "3.11.2",
+      "xgboost": "3.4.1",
+      "lightgbm": "4.7.0",
+      "catboost": "1.2.10",
+      "umap-learn": "0.6.0",
+      "torch": "2.15.0",
+      "gymnasium": "1.4.0"
+    }
+  }
+}
