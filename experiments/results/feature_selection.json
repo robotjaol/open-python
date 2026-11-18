@@ -1,0 +1,55 @@
+{
+  "notebook": "feature_selection",
+  "family": "advanced",
+  "algorithm": "SelectKBest in pipeline",
+  "dataset": "breast_cancer",
+  "task": "classification",
+  "seed": 42,
+  "config": {
+    "k": 10,
+    "noise_columns": 300,
+    "rows": 100,
+    "repetitions": 20
+  },
+  "metrics": {
+    "real_leaky": 0.9355,
+    "real_correct": 0.9315000000000001,
+    "noise_leaky": 0.7405,
+    "noise_correct": 0.5105000000000001,
+    "noise_leaky_std": 0.037763112048385894,
+    "noise_correct_std": 0.05844250435932288
+  },
+  "extra": {
+    "table": [
+      {
+        "index": "leaky selection",
+        "real data + noise columns": 0.9355,
+        "pure noise labels (true accuracy about 0.5)": 0.7405
+      },
+      {
+        "index": "selection inside pipeline",
+        "real data + noise columns": 0.9315,
+        "pure noise labels (true accuracy about 0.5)": 0.5105
+      }
+    ]
+  },
+  "created": "2026-11-18T05:21:47+00:00",
+  "environment": {
+    "python": "3.13.18",
+    "platform": "Linux-6.18.44-fc-v595-x86_64-with-glibc2.39",
+    "cpu_count": 2,
+    "packages": {
+      "numpy": "2.5.3",
+      "pandas": "3.0.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "matplotlib": "3.11.2",
+      "xgboost": "3.4.1",
+      "lightgbm": "4.7.0",
+      "catboost": "1.2.10",
+      "umap-learn": "0.6.0",
+      "torch": "2.15.0",
+      "gymnasium": "1.4.0"
+    }
+  }
+}

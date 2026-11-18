@@ -1,0 +1,103 @@
+{
+  "notebook": "model_robustness",
+  "family": "advanced",
+  "algorithm": "robustness test of three classifiers",
+  "dataset": "digits",
+  "task": "classification",
+  "seed": 42,
+  "config": {
+    "corruptions": [
+      "clean",
+      "noise 2",
+      "noise 4",
+      "dropout 20%",
+      "dropout 40%",
+      "shift 1 px"
+    ]
+  },
+  "metrics": {
+    "logistic_clean": 0.9722222222222222,
+    "logistic_noise_2": 0.7638888888888888,
+    "logistic_noise_4": 0.41944444444444445,
+    "logistic_dropout_20pct": 0.8138888888888889,
+    "logistic_dropout_40pct": 0.5861111111111111,
+    "logistic_shift_1_px": 0.35833333333333334,
+    "random_forest_clean": 0.9722222222222222,
+    "random_forest_noise_2": 0.9444444444444444,
+    "random_forest_noise_4": 0.8694444444444445,
+    "random_forest_dropout_20pct": 0.9194444444444444,
+    "random_forest_dropout_40pct": 0.7722222222222223,
+    "random_forest_shift_1_px": 0.5055555555555555,
+    "svm_rbf_clean": 0.9805555555555555,
+    "svm_rbf_noise_2": 0.12222222222222222,
+    "svm_rbf_noise_4": 0.10277777777777777,
+    "svm_rbf_dropout_20pct": 0.9,
+    "svm_rbf_dropout_40pct": 0.65,
+    "svm_rbf_shift_1_px": 0.31666666666666665,
+    "svm_rbf_no_scaling_clean": 0.9944444444444445,
+    "svm_rbf_no_scaling_noise_2": 0.9861111111111112,
+    "svm_rbf_no_scaling_noise_4": 0.9305555555555556,
+    "svm_rbf_no_scaling_dropout_20pct": 0.9027777777777778,
+    "svm_rbf_no_scaling_dropout_40pct": 0.7166666666666667,
+    "svm_rbf_no_scaling_shift_1_px": 0.5361111111111111
+  },
+  "extra": {
+    "table": [
+      {
+        "index": "logistic",
+        "clean": 0.9722,
+        "noise 2": 0.7639,
+        "noise 4": 0.4194,
+        "dropout 20%": 0.8139,
+        "dropout 40%": 0.5861,
+        "shift 1 px": 0.3583
+      },
+      {
+        "index": "random_forest",
+        "clean": 0.9722,
+        "noise 2": 0.9444,
+        "noise 4": 0.8694,
+        "dropout 20%": 0.9194,
+        "dropout 40%": 0.7722,
+        "shift 1 px": 0.5056
+      },
+      {
+        "index": "svm_rbf",
+        "clean": 0.9806,
+        "noise 2": 0.1222,
+        "noise 4": 0.1028,
+        "dropout 20%": 0.9,
+        "dropout 40%": 0.65,
+        "shift 1 px": 0.3167
+      },
+      {
+        "index": "svm_rbf_no_scaling",
+        "clean": 0.9944,
+        "noise 2": 0.9861,
+        "noise 4": 0.9306,
+        "dropout 20%": 0.9028,
+        "dropout 40%": 0.7167,
+        "shift 1 px": 0.5361
+      }
+    ]
+  },
+  "created": "2026-11-18T05:24:40+00:00",
+  "environment": {
+    "python": "3.13.18",
+    "platform": "Linux-6.18.44-fc-v595-x86_64-with-glibc2.39",
+    "cpu_count": 2,
+    "packages": {
+      "numpy": "2.5.3",
+      "pandas": "3.0.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "matplotlib": "3.11.2",
+      "xgboost": "3.4.1",
+      "lightgbm": "4.7.0",
+      "catboost": "1.2.10",
+      "umap-learn": "0.6.0",
+      "torch": "2.15.0",
+      "gymnasium": "1.4.0"
+    }
+  }
+}

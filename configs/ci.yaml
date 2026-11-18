@@ -1,0 +1,8 @@
+# Notebooks executed on every pull request (fast subset). The full set is run on a schedule.
+fast_notebooks:
+  - 00_fundamentals
+  - 04_advanced_machine_learning/feature_selection
+  - 04_advanced_machine_learning/model_robustness
+  - 05_end_to_end_projects/digit_recognition
+  - 05_end_to_end_projects/fuel_efficiency_regression
+  - 05_end_to_end_projects/diabetes_interpretation

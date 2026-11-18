@@ -1,0 +1,14 @@
+[
+ {"area": "Fundamentals", "target": "8 notebooks", "done": "8 notebooks, executed", "status": "Completed"},
+ {"area": "Supervised learning", "target": "10 or more", "done": "20 notebooks (8 regression, 12 classification), executed", "status": "Completed"},
+ {"area": "Unsupervised learning", "target": "10 or more", "done": "10 notebooks, executed", "status": "Completed"},
+ {"area": "Reinforcement learning", "target": "10 or more", "done": "10 notebooks (5 tabular, 2 deep value, 3 policy gradient), executed with 3 seeds for deep methods", "status": "Completed"},
+ {"area": "RL extras", "target": "A2C, SAC, DDPG, TD3, offline RL", "done": "none", "status": "Not implemented"},
+ {"area": "Advanced ML", "target": "8 topics", "done": "6 notebooks. Time series not implemented, anomaly detection lives elsewhere", "status": "Partially completed"},
+ {"area": "End-to-end projects", "target": "10 with listed domains", "done": "10 executed projects, but 5 required domains are replaced by substitutes", "status": "Partially completed"},
+ {"area": "Predictive maintenance, credit risk, fraud, energy forecasting, recommendation", "target": "5 projects", "done": "data hosts unreachable, nothing simulated", "status": "Blocked"},
+ {"area": "Model deployment", "target": "5 parts", "done": "serialization, API, batch, drift. Docker not built", "status": "Partially completed"},
+ {"area": "Research registers", "target": "5 documents", "done": "source register, paper index, comparisons, review map, gaps. 4 references not verified", "status": "Partially completed"},
+ {"area": "CI workflows", "target": "3 workflows", "done": "4 workflows written and YAML parsed. Not run on GitHub yet", "status": "Not validated"},
+ {"area": "Dependency lock (uv.lock)", "target": "uv.lock", "done": "resolved with uv lock. Not install-tested, CI does not use it", "status": "Partially completed"}
+]

@@ -2,49 +2,49 @@
   "01_supervised_learning/01_regression/linear_regression/01_linear_regression.ipynb": {
     "notebook": "01_supervised_learning/01_regression/linear_regression/01_linear_regression.ipynb",
     "status": "ok",
-    "seconds": 8.8,
+    "seconds": 8.0,
     "error": ""
   },
   "01_supervised_learning/01_regression/elastic_net/05_elastic_net.ipynb": {
     "notebook": "01_supervised_learning/01_regression/elastic_net/05_elastic_net.ipynb",
     "status": "ok",
-    "seconds": 10.5,
+    "seconds": 8.1,
     "error": ""
   },
   "01_supervised_learning/01_regression/gradient_boosting_regressor/07_gradient_boosting_regressor.ipynb": {
     "notebook": "01_supervised_learning/01_regression/gradient_boosting_regressor/07_gradient_boosting_regressor.ipynb",
     "status": "ok",
-    "seconds": 14.5,
+    "seconds": 11.8,
     "error": ""
   },
   "01_supervised_learning/01_regression/hist_gradient_boosting/08_hist_gradient_boosting.ipynb": {
     "notebook": "01_supervised_learning/01_regression/hist_gradient_boosting/08_hist_gradient_boosting.ipynb",
     "status": "ok",
-    "seconds": 12.0,
+    "seconds": 7.9,
     "error": ""
   },
   "01_supervised_learning/01_regression/lasso_regression/04_lasso_regression.ipynb": {
     "notebook": "01_supervised_learning/01_regression/lasso_regression/04_lasso_regression.ipynb",
     "status": "ok",
-    "seconds": 9.0,
+    "seconds": 7.3,
     "error": ""
   },
   "01_supervised_learning/01_regression/polynomial_regression/02_polynomial_regression.ipynb": {
     "notebook": "01_supervised_learning/01_regression/polynomial_regression/02_polynomial_regression.ipynb",
     "status": "ok",
-    "seconds": 8.4,
+    "seconds": 7.2,
     "error": ""
   },
   "01_supervised_learning/01_regression/ridge_regression/03_ridge_regression.ipynb": {
     "notebook": "01_supervised_learning/01_regression/ridge_regression/03_ridge_regression.ipynb",
     "status": "ok",
-    "seconds": 9.3,
+    "seconds": 7.5,
     "error": ""
   },
   "01_supervised_learning/01_regression/support_vector_regression/06_support_vector_regression.ipynb": {
     "notebook": "01_supervised_learning/01_regression/support_vector_regression/06_support_vector_regression.ipynb",
     "status": "ok",
-    "seconds": 8.9,
+    "seconds": 7.3,
     "error": ""
   },
   "01_supervised_learning/02_classification/adaboost/10_adaboost.ipynb": {
@@ -221,64 +221,34 @@
     "seconds": 243.1,
     "error": ""
   },
-  "05_end_to_end_projects/anomaly_screening/anomaly_screening.ipynb": {
-    "notebook": "05_end_to_end_projects/anomaly_screening/anomaly_screening.ipynb",
+  "03_reinforcement_learning/03_policy_gradient_methods/actor_critic/09_actor_critic.ipynb": {
+    "notebook": "03_reinforcement_learning/03_policy_gradient_methods/actor_critic/09_actor_critic.ipynb",
     "status": "ok",
-    "seconds": 9.2,
+    "seconds": 772.2,
     "error": ""
   },
-  "05_end_to_end_projects/autonomous_control/autonomous_control.ipynb": {
-    "notebook": "05_end_to_end_projects/autonomous_control/autonomous_control.ipynb",
+  "03_reinforcement_learning/03_policy_gradient_methods/ppo/10_ppo.ipynb": {
+    "notebook": "03_reinforcement_learning/03_policy_gradient_methods/ppo/10_ppo.ipynb",
     "status": "ok",
-    "seconds": 66.7,
+    "seconds": 198.9,
     "error": ""
   },
-  "05_end_to_end_projects/customer_churn/customer_churn.ipynb": {
-    "notebook": "05_end_to_end_projects/customer_churn/customer_churn.ipynb",
+  "03_reinforcement_learning/03_policy_gradient_methods/reinforce/08_reinforce.ipynb": {
+    "notebook": "03_reinforcement_learning/03_policy_gradient_methods/reinforce/08_reinforce.ipynb",
     "status": "ok",
-    "seconds": 8.9,
-    "error": ""
-  },
-  "05_end_to_end_projects/customer_segmentation/customer_segmentation.ipynb": {
-    "notebook": "05_end_to_end_projects/customer_segmentation/customer_segmentation.ipynb",
-    "status": "ok",
-    "seconds": 11.9,
-    "error": ""
-  },
-  "05_end_to_end_projects/diabetes_interpretation/diabetes_interpretation.ipynb": {
-    "notebook": "05_end_to_end_projects/diabetes_interpretation/diabetes_interpretation.ipynb",
-    "status": "ok",
-    "seconds": 5.2,
-    "error": ""
-  },
-  "05_end_to_end_projects/digit_recognition/digit_recognition.ipynb": {
-    "notebook": "05_end_to_end_projects/digit_recognition/digit_recognition.ipynb",
-    "status": "ok",
-    "seconds": 6.8,
-    "error": ""
-  },
-  "05_end_to_end_projects/fuel_efficiency_regression/fuel_efficiency_regression.ipynb": {
-    "notebook": "05_end_to_end_projects/fuel_efficiency_regression/fuel_efficiency_regression.ipynb",
-    "status": "ok",
-    "seconds": 5.5,
+    "seconds": 223.5,
     "error": ""
   },
   "05_end_to_end_projects/medical_classification/medical_classification.ipynb": {
     "notebook": "05_end_to_end_projects/medical_classification/medical_classification.ipynb",
     "status": "ok",
-    "seconds": 7.8,
+    "seconds": 8.0,
     "error": ""
   },
-  "05_end_to_end_projects/tabular_model_benchmark/tabular_model_benchmark.ipynb": {
-    "notebook": "05_end_to_end_projects/tabular_model_benchmark/tabular_model_benchmark.ipynb",
+  "05_end_to_end_projects/anomaly_screening/anomaly_screening.ipynb": {
+    "notebook": "05_end_to_end_projects/anomaly_screening/anomaly_screening.ipynb",
     "status": "ok",
-    "seconds": 42.2,
-    "error": ""
-  },
-  "05_end_to_end_projects/wine_authentication/wine_authentication.ipynb": {
-    "notebook": "05_end_to_end_projects/wine_authentication/wine_authentication.ipynb",
-    "status": "ok",
-    "seconds": 21.0,
+    "seconds": 8.8,
     "error": ""
   }
 }

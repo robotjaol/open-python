@@ -5,8 +5,6 @@ from dataclasses import asdict, dataclass, field
 from datetime import datetime, timezone
 from pathlib import Path
 
-import matplotlib.pyplot as plt
-
 from ml_lab.utils.reproducibility import environment_info, repo_root
 
 
@@ -31,7 +29,7 @@ class ExperimentRecord:
         payload["environment"] = environment_info()
         path = folder / f"{self.notebook}.json"
         path.write_text(json.dumps(payload, indent=2, default=float))
-        return path
+        return path.relative_to(repo_root())
 
 
 def save_figure(fig, notebook, name):

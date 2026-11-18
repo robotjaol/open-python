@@ -1,8 +1,14 @@
 """Notebook builder for unsupervised and RL specs."""
 
 from nbformat.v4 import new_code_cell, new_markdown_cell
-
-from nbgen import SECTIONS, header, objectives_cell, problem_cell, papers_cell, write_notebook  # noqa: F401
+from nbgen import (  # noqa: F401
+    SECTIONS,
+    header,
+    objectives_cell,
+    papers_cell,
+    problem_cell,
+    write_notebook,
+)
 
 UN_SETUP = '''import warnings
 warnings.filterwarnings("ignore")

@@ -1,0 +1,28 @@
+name: dependency-audit
+
+on:
+  schedule:
+    - cron: "41 4 * * 1"
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - pyproject.toml
+      - uv.lock
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - run: pip install pip-audit
+      - name: Audit resolved dependencies
+        run: |
+          pip install -e ".[all]"
+          pip freeze --exclude-editable > /tmp/requirements-frozen.txt
+          pip-audit -r /tmp/requirements-frozen.txt

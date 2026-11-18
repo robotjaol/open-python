@@ -1,10 +1,12 @@
 """Build RL notebooks."""
 import sys
 from pathlib import Path
+
 sys.path.insert(0, str(Path(__file__).parent))
+import specs_rl_a  # noqa: E402,F401
+import specs_rl_b  # noqa: E402,F401
 from nbgen import build  # noqa: E402
 from nbgen_generic import generic_notebook  # noqa: E402
-import specs_rl_a, specs_rl_b  # noqa: E402,F401
 from specs_rl_a import RL  # noqa: E402
 
 RL_EDA_NOTE = "Run the cell below to inspect the environment."

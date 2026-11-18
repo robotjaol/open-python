@@ -1,0 +1,34 @@
+[
+  {
+    "name": "FrozenLake-v1",
+    "source": "Gymnasium toy_text",
+    "license": "MIT (Gymnasium)",
+    "type": "simulated environment",
+    "access": "pip install gymnasium",
+    "limits": "4x4 map, tabular only"
+  },
+  {
+    "name": "Taxi-v3",
+    "source": "Gymnasium toy_text",
+    "license": "MIT (Gymnasium)",
+    "type": "simulated environment",
+    "access": "pip install gymnasium",
+    "limits": "500 states, discrete"
+  },
+  {
+    "name": "CliffWalking-v1",
+    "source": "Gymnasium toy_text",
+    "license": "MIT (Gymnasium)",
+    "type": "simulated environment",
+    "access": "pip install gymnasium",
+    "limits": "tabular only"
+  },
+  {
+    "name": "CartPole-v1",
+    "source": "Gymnasium classic_control",
+    "license": "MIT (Gymnasium)",
+    "type": "simulated environment",
+    "access": "pip install gymnasium",
+    "limits": "4 state values, 2 actions, solved by simple rules"
+  }
+]

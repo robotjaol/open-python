@@ -12,4 +12,4 @@ Classify tumours as malignant or benign from nucleus measurements and report how
 
 ## Limits
 
-One institution, 569 rows, only 114 test rows. No external validation. The data are measurements from images, not images. The result must not be used for patient care.
+The validation sensitivity target of 0.95 is a design goal, not a guarantee: in the committed run the test sensitivity is lower than the target and its bootstrap interval is wide (see the results table), because a threshold chosen on about 114 validation rows does not transfer exactly. One institution, 569 rows, only 114 test rows. No external validation. The data are measurements from images, not images. The result must not be used for patient care.

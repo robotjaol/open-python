@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>open-python lab: results and notebook previews</title>
+<meta name="description" content="Browse saved experiment results and executed notebooks from the open-python machine learning lab.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="#">open-python lab</a>
+    <nav aria-label="Sections">
+      <a href="#results">Results</a>
+      <a href="#status">Status</a>
+      <a href="https://github.com/robotjaol/open-python">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="intro">
+    <h1>Experiment results, straight from the notebooks</h1>
+    <p>Every number on this page was written by an executed notebook into <code>experiments/results</code>. Open a row to see its metrics, figures, and the full notebook.</p>
+    <p class="note">Single runs on small datasets. Read the limits in each notebook before comparing rows.</p>
+  </section>
+
+  <section id="results" aria-labelledby="rh">
+    <h2 id="rh">Results</h2>
+    <div class="tools">
+      <label for="q">Search</label>
+      <input id="q" type="search" placeholder="algorithm or dataset" autocomplete="off">
+      <label for="fam">Family</label>
+      <select id="fam"></select>
+      <span id="count" class="muted" aria-live="polite"></span>
+    </div>
+    <div class="tablewrap">
+      <table id="tbl">
+        <thead><tr><th>Notebook</th><th>Family</th><th>Dataset</th><th>Key metric</th><th><span class="sr">Open</span></th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="detail" hidden aria-labelledby="dh">
+    <div class="detailhead">
+      <h2 id="dh"></h2>
+      <button id="close" type="button">Close</button>
+    </div>
+    <p id="dmeta" class="muted"></p>
+    <div class="cols">
+      <div><h3>Metrics</h3><table id="mt"><tbody></tbody></table></div>
+      <div><h3>Figures</h3><div id="figs"></div></div>
+    </div>
+    <p><a id="prev" class="btn" target="_blank" rel="noopener">Open executed notebook</a></p>
+  </section>
+
+  <section id="status" aria-labelledby="sh">
+    <h2 id="sh">What is done and what is not</h2>
+    <div class="tablewrap">
+      <table id="st"><thead><tr><th>Area</th><th>Target</th><th>Delivered</th><th>Status</th></tr></thead><tbody></tbody></table>
+    </div>
+  </section>
+</main>
+<footer class="wrap foot"><p>MIT licensed. Datasets keep their own licences, see the catalog in the repository.</p></footer>
+<script src="app.js"></script>
+</body>
+</html>

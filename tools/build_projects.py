@@ -6,8 +6,8 @@ import nbformat
 from nbformat.v4 import new_code_cell, new_markdown_cell, new_notebook
 
 sys.path.insert(0, str(Path(__file__).parent))
-from refs import REFS, bibtex  # noqa: E402
 import specs_common as C  # noqa: E402
+from refs import REFS, bibtex  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE = ROOT / "05_end_to_end_projects"
@@ -306,7 +306,7 @@ display(pd.DataFrame(rows).set_index("model").round(3))''',
 display(pd.Series(imp.importances_mean, index=Xte.columns).sort_values(ascending=False).head(6).round(4).to_frame("ROC-AUC drop"))
 missed = Xte[(pred == 0) & (yte.values == 1)]
 print("missed malignant rows:", len(missed)); display(missed[["radius_mean", "area_mean", "concavity_mean"]].round(3) if "radius_mean" in missed else missed.iloc[:, :3])''',
-        limits="One institution, 569 rows, only 114 test rows. No external validation. The data are measurements from images, not images. The result must not be used for patient care.",
+        limits="The validation sensitivity target of 0.95 is a design goal, not a guarantee: in the committed run the test sensitivity is lower than the target and its bootstrap interval is wide (see the results table), because a threshold chosen on about 114 validation rows does not transfer exactly. One institution, 569 rows, only 114 test rows. No external validation. The data are measurements from images, not images. The result must not be used for patient care.",
         recs="Treat this as a method demonstration. Real use needs external validation on another site, clinical review of error costs, calibration checks and regulatory review.")
 
 # ------------------------------------------------------------------ 4 control
@@ -649,7 +649,7 @@ for rep in range(30):
         score = -det.score_samples(Xb) if n != "one_class_svm" else -det.decision_function(Xb)
         results[n]["roc"].append(roc_auc_score(yb, score)); results[n]["pr"].append(average_precision_score(yb, score))
 print("done")''',
-        eval_md="Mean and standard deviation over 30 draws, with the random ranking as the PR-AUC floor (about the share of anomalies, 0.044).",
+        eval_md="Mean and standard deviation over 30 draws, with the random ranking as the PR-AUC floor (about 0.048).",
         eval='''summary = pd.DataFrame({n: {"ROC_AUC_mean": np.mean(r["roc"]), "ROC_AUC_std": np.std(r["roc"], ddof=1), "PR_AUC_mean": np.mean(r["pr"]), "PR_AUC_std": np.std(r["pr"], ddof=1)} for n, r in results.items()}).T
 display(summary.round(3))
 METRICS = {f"{n}_{k}": float(v) for n, row in summary.iterrows() for k, v in row.items()}

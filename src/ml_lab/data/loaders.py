@@ -1,9 +1,7 @@
 """Load real datasets into one bundle type."""
 
 from dataclasses import dataclass, field
-from pathlib import Path
 
-import numpy as np
 import pandas as pd
 
 from ml_lab.utils.reproducibility import repo_root

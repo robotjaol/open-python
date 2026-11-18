@@ -29,20 +29,25 @@ def run_one(path, timeout=1500):
 
 def main(targets):
     paths = []
+    if not targets or targets == ["."]:
+        targets = ["00_fundamentals", "01_supervised_learning", "02_unsupervised_learning", "03_reinforcement_learning",
+                   "04_advanced_machine_learning", "05_end_to_end_projects"]
     for target in targets:
         target = Path(target)
         paths += sorted(target.rglob("*.ipynb")) if target.is_dir() else [target]
     paths = [p.resolve() for p in paths if ".ipynb_checkpoints" not in str(p)]
     log = json.loads(LOG.read_text()) if LOG.exists() else {}
+    this_run = []
     for path in paths:
         result = run_one(path)
         log[result["notebook"]] = result
+        this_run.append(result)
         print(result["status"], result["seconds"], result["notebook"], flush=True)
         if result["error"]:
             print(result["error"][-600:], flush=True)
         LOG.parent.mkdir(parents=True, exist_ok=True)
         LOG.write_text(json.dumps(log, indent=2))
-    return 0 if all(r["status"] == "ok" for r in log.values()) else 1
+    return 0 if all(r["status"] == "ok" for r in this_run) else 1
 
 
 if __name__ == "__main__":

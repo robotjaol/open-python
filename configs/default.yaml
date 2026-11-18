@@ -1,0 +1,17 @@
+# Defaults used by notebooks and tools. Change a value here, not inside a notebook.
+seed: 42
+split:
+  train: 0.6
+  validation: 0.2
+  test: 0.2
+cross_validation:
+  folds: 5
+rl:
+  deep_seeds: 3
+  tabular_seeds: 5
+  eval_episodes: 30
+  eval_seed_offset: 5000   # evaluation seeds never used in training
+paths:
+  results: experiments/results
+  figures: experiments/figures
+  cache: datasets/cache

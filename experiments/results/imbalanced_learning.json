@@ -1,0 +1,88 @@
+{
+  "notebook": "imbalanced_learning",
+  "family": "advanced",
+  "algorithm": "class weights and threshold tuning",
+  "dataset": "telco_churn",
+  "task": "classification",
+  "seed": 42,
+  "config": {
+    "threshold_grid": "0.05 to 0.9 on validation"
+  },
+  "metrics": {
+    "logistic_plain_PR_AUC": 0.6337547111350025,
+    "logistic_plain_F1_at_0.5": 0.5982658959537572,
+    "logistic_plain_tuned_threshold": 0.38,
+    "logistic_plain_F1_at_tuned": 0.6168674698795181,
+    "logistic_plain_recall_at_0.5": 0.553475935828877,
+    "logistic_balanced_PR_AUC": 0.6331710424354436,
+    "logistic_balanced_F1_at_0.5": 0.614900314795383,
+    "logistic_balanced_tuned_threshold": 0.6100000000000001,
+    "logistic_balanced_F1_at_tuned": 0.6159250585480094,
+    "logistic_balanced_recall_at_0.5": 0.7834224598930482,
+    "forest_plain_PR_AUC": 0.6426793517836101,
+    "forest_plain_F1_at_0.5": 0.5457364341085271,
+    "forest_plain_tuned_threshold": 0.36,
+    "forest_plain_F1_at_tuned": 0.6248520710059171,
+    "forest_plain_recall_at_0.5": 0.47058823529411764,
+    "forest_balanced_PR_AUC": 0.6411362320804891,
+    "forest_balanced_F1_at_0.5": 0.6225596529284165,
+    "forest_balanced_tuned_threshold": 0.6100000000000001,
+    "forest_balanced_F1_at_tuned": 0.6056701030927835,
+    "forest_balanced_recall_at_0.5": 0.767379679144385
+  },
+  "extra": {
+    "table": [
+      {
+        "model": "logistic plain",
+        "PR_AUC": 0.6338,
+        "F1_at_0.5": 0.5983,
+        "tuned_threshold": 0.38,
+        "F1_at_tuned": 0.6169,
+        "recall_at_0.5": 0.5535
+      },
+      {
+        "model": "logistic balanced",
+        "PR_AUC": 0.6332,
+        "F1_at_0.5": 0.6149,
+        "tuned_threshold": 0.61,
+        "F1_at_tuned": 0.6159,
+        "recall_at_0.5": 0.7834
+      },
+      {
+        "model": "forest plain",
+        "PR_AUC": 0.6427,
+        "F1_at_0.5": 0.5457,
+        "tuned_threshold": 0.36,
+        "F1_at_tuned": 0.6249,
+        "recall_at_0.5": 0.4706
+      },
+      {
+        "model": "forest balanced",
+        "PR_AUC": 0.6411,
+        "F1_at_0.5": 0.6226,
+        "tuned_threshold": 0.61,
+        "F1_at_tuned": 0.6057,
+        "recall_at_0.5": 0.7674
+      }
+    ]
+  },
+  "created": "2026-11-18T05:23:46+00:00",
+  "environment": {
+    "python": "3.13.18",
+    "platform": "Linux-6.18.44-fc-v595-x86_64-with-glibc2.39",
+    "cpu_count": 2,
+    "packages": {
+      "numpy": "2.5.3",
+      "pandas": "3.0.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "matplotlib": "3.11.2",
+      "xgboost": "3.4.1",
+      "lightgbm": "4.7.0",
+      "catboost": "1.2.10",
+      "umap-learn": "0.6.0",
+      "torch": "2.15.0",
+      "gymnasium": "1.4.0"
+    }
+  }
+}

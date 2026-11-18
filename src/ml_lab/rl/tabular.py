@@ -1,7 +1,7 @@
 """Tabular RL methods in NumPy."""
 
-import numpy as np
 import gymnasium as gym
+import numpy as np
 
 
 def transition_model(env_id, **kwargs):
@@ -116,7 +116,6 @@ def sarsa(env_id, episodes, alpha=0.5, gamma=0.99, epsilon=0.1, seed=0, decay=No
 def td0_prediction(env_id, policy, episodes, alpha=0.05, gamma=0.99, seed=0, **env_kwargs):
     """TD(0) value estimate of a fixed policy. Returns values after every episode."""
     env = gym.make(env_id, **env_kwargs)
-    rng = np.random.default_rng(seed)
     values = np.zeros(env.observation_space.n)
     history = []
     env.reset(seed=seed)

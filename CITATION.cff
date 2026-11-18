@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it as below."
+title: "open-python: a paper-driven Python machine learning learning and research lab"
+type: software
+authors:
+  - alias: robotjaol
+repository-code: "https://github.com/robotjaol/open-python"
+license: MIT
+version: 0.1.0
+date-released: 2026-11-18
+keywords:
+  - machine learning
+  - reinforcement learning
+  - education
+  - reproducible research

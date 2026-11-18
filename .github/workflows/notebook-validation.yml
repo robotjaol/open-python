@@ -1,0 +1,58 @@
+name: notebook-validation
+
+on:
+  pull_request:
+    paths:
+      - "0*/**"
+      - "src/**"
+      - "tools/**"
+  schedule:
+    - cron: "17 3 * * 0"   # weekly, full run
+  workflow_dispatch:
+    inputs:
+      scope:
+        description: "fast or full"
+        default: fast
+
+permissions:
+  contents: read
+
+jobs:
+  fast:
+    if: github.event_name == 'pull_request' || (github.event_name == 'workflow_dispatch' && inputs.scope == 'fast')
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+      - run: pip install -e ".[all,development]"
+      - name: Execute fast subset from a clean kernel
+        env:
+          OMP_NUM_THREADS: "1"
+        run: |
+          python scripts/validate_notebooks.py \
+            00_fundamentals \
+            04_advanced_machine_learning/feature_selection \
+            04_advanced_machine_learning/model_robustness \
+            05_end_to_end_projects/digit_recognition \
+            05_end_to_end_projects/fuel_efficiency_regression \
+            05_end_to_end_projects/diabetes_interpretation
+
+  full:
+    if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.scope == 'full')
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+      - run: pip install -e ".[all,development]"
+      - name: Execute every notebook from a clean kernel
+        env:
+          OMP_NUM_THREADS: "1"
+        run: python scripts/validate_notebooks.py

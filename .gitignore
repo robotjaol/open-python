@@ -13,3 +13,7 @@ experiments/models/*
 !experiments/models/.gitkeep
 .DS_Store
 .env
+
+# generated model artifacts
+*.joblib
+06_model_deployment/model_serialization/artifacts/

@@ -1,0 +1,102 @@
+{
+  "notebook": "model_calibration",
+  "family": "advanced",
+  "algorithm": "CalibratedClassifierCV",
+  "dataset": "telco_churn",
+  "task": "classification",
+  "seed": 42,
+  "config": {
+    "cv": 5,
+    "bins": 10,
+    "methods": [
+      "raw",
+      "sigmoid",
+      "isotonic"
+    ]
+  },
+  "metrics": {
+    "forest_raw_Brier": 0.13947460607588827,
+    "forest_raw_ECE": 0.023265582610285333,
+    "forest_raw_ROC_AUC": 0.8354723707664884,
+    "forest_sigmoid_Brier": 0.13964598314342627,
+    "forest_sigmoid_ECE": 0.039139151513775755,
+    "forest_sigmoid_ROC_AUC": 0.8383063370275647,
+    "forest_isotonic_Brier": 0.13851002915486244,
+    "forest_isotonic_ECE": 0.015892473915484727,
+    "forest_isotonic_ROC_AUC": 0.8383295874344469,
+    "hist_gb_raw_Brier": 0.1359234303079397,
+    "hist_gb_raw_ECE": 0.013448584406097279,
+    "hist_gb_raw_ROC_AUC": 0.8430791288847556,
+    "hist_gb_sigmoid_Brier": 0.1350346254961204,
+    "hist_gb_sigmoid_ECE": 0.021790395297564335,
+    "hist_gb_sigmoid_ROC_AUC": 0.8454997545790385,
+    "hist_gb_isotonic_Brier": 0.13609521755449186,
+    "hist_gb_isotonic_ECE": 0.02950164215563488,
+    "hist_gb_isotonic_ROC_AUC": 0.8445103205972772
+  },
+  "extra": {
+    "table": [
+      {
+        "model": "forest",
+        "calibration": "raw",
+        "Brier": 0.1395,
+        "ECE": 0.0233,
+        "ROC_AUC": 0.8355
+      },
+      {
+        "model": "forest",
+        "calibration": "sigmoid",
+        "Brier": 0.1396,
+        "ECE": 0.0391,
+        "ROC_AUC": 0.8383
+      },
+      {
+        "model": "forest",
+        "calibration": "isotonic",
+        "Brier": 0.1385,
+        "ECE": 0.0159,
+        "ROC_AUC": 0.8383
+      },
+      {
+        "model": "hist_gb",
+        "calibration": "raw",
+        "Brier": 0.1359,
+        "ECE": 0.0134,
+        "ROC_AUC": 0.8431
+      },
+      {
+        "model": "hist_gb",
+        "calibration": "sigmoid",
+        "Brier": 0.135,
+        "ECE": 0.0218,
+        "ROC_AUC": 0.8455
+      },
+      {
+        "model": "hist_gb",
+        "calibration": "isotonic",
+        "Brier": 0.1361,
+        "ECE": 0.0295,
+        "ROC_AUC": 0.8445
+      }
+    ]
+  },
+  "created": "2026-11-18T05:24:03+00:00",
+  "environment": {
+    "python": "3.13.18",
+    "platform": "Linux-6.18.44-fc-v595-x86_64-with-glibc2.39",
+    "cpu_count": 2,
+    "packages": {
+      "numpy": "2.5.3",
+      "pandas": "3.0.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "matplotlib": "3.11.2",
+      "xgboost": "3.4.1",
+      "lightgbm": "4.7.0",
+      "catboost": "1.2.10",
+      "umap-learn": "0.6.0",
+      "torch": "2.15.0",
+      "gymnasium": "1.4.0"
+    }
+  }
+}

@@ -1,6 +1,6 @@
 """Unsupervised specs, part A (clustering)."""
 
-from specs_common import DS_BC, DS_DIGITS, DS_MPG, DS_WINE
+from specs_common import DS_DIGITS, DS_MPG, DS_WINE
 
 UN = []
 BASE = "02_unsupervised_learning"

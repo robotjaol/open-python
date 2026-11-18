@@ -1,7 +1,7 @@
 """Unsupervised specs, part B."""
 
 from specs_common import DS_BC, DS_DIGITS
-from specs_unsup_a import UN, un
+from specs_unsup_a import un
 
 CL, DR, AN = "01_clustering", "02_dimensionality_reduction", "03_anomaly_detection"
 

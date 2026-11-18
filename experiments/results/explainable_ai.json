@@ -1,0 +1,77 @@
+{
+  "notebook": "explainable_ai",
+  "family": "advanced",
+  "algorithm": "permutation importance, PDP",
+  "dataset": "auto_mpg",
+  "task": "regression",
+  "seed": 42,
+  "config": {
+    "model": "HistGradientBoostingRegressor",
+    "repeats": 20
+  },
+  "metrics": {
+    "test_R2": 0.8873168997364901,
+    "top_feature_importance": 0.31087289334695023,
+    "top_feature_rank_std": 0.8825799501580878,
+    "n_bootstrap": 20.0
+  },
+  "extra": {
+    "importance": [
+      {
+        "index": "weight",
+        "importance": 0.3109,
+        "std": 0.0587
+      },
+      {
+        "index": "model_year",
+        "importance": 0.3059,
+        "std": 0.0599
+      },
+      {
+        "index": "displacement",
+        "importance": 0.0814,
+        "std": 0.0219
+      },
+      {
+        "index": "horsepower",
+        "importance": 0.0636,
+        "std": 0.0212
+      },
+      {
+        "index": "acceleration",
+        "importance": 0.0157,
+        "std": 0.006
+      },
+      {
+        "index": "origin",
+        "importance": 0.011,
+        "std": 0.0038
+      },
+      {
+        "index": "cylinders",
+        "importance": 0.0034,
+        "std": 0.0044
+      }
+    ],
+    "top_feature": "weight"
+  },
+  "created": "2026-11-18T05:21:40+00:00",
+  "environment": {
+    "python": "3.13.18",
+    "platform": "Linux-6.18.44-fc-v595-x86_64-with-glibc2.39",
+    "cpu_count": 2,
+    "packages": {
+      "numpy": "2.5.3",
+      "pandas": "3.0.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "matplotlib": "3.11.2",
+      "xgboost": "3.4.1",
+      "lightgbm": "4.7.0",
+      "catboost": "1.2.10",
+      "umap-learn": "0.6.0",
+      "torch": "2.15.0",
+      "gymnasium": "1.4.0"
+    }
+  }
+}

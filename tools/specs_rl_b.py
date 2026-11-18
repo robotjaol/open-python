@@ -1,6 +1,6 @@
 """RL specs, part B (deep)."""
 
-from specs_rl_a import RL, rl
+from specs_rl_a import rl
 
 DV, PG = "02_deep_value_methods", "03_policy_gradient_methods"
 
@@ -168,7 +168,7 @@ for name, rs, color in [("DQN", dqn_runs, "C0"), ("Double DQN", ddqn_runs, "C1")
 axes[1].axhline(UPPER, color="red", linestyle="--", label="upper bound of true value"); axes[1].set_xlabel("Environment steps"); axes[1].set_ylabel("Mean max Q on replay samples"); axes[1].legend()
 axes[0].set_xlabel("Environment steps"); axes[0].set_ylabel("Return (10 episode mean)"); axes[0].legend(); axes[0].set_title("Returns")
 plt.tight_layout(); save_figure(fig, NOTEBOOK_ID, "curves"); plt.show()''',
-   interpret_md="If the mean max Q exceeds the upper bound the estimate is optimistic. Whether the policy return improves is a separate question.",
+   interpret_md="If the mean max Q exceeds the upper bound the estimate is optimistic. Whether the policy return improves is a separate question.\n\n**What the committed run shows (3 seeds, 40 960 steps, values from `experiments/results/double_dqn.json`):** the mean max Q of both DQN (about 47) and Double DQN (about 46) stays below the analytic bound of 99.3, so **overestimation was not demonstrated in this setup**. The evaluation return of Double DQN (about 114) is lower than that of DQN (about 354), with a large spread across seeds for both. With three seeds and a short budget this is not evidence that Double DQN is worse in general. It does mean that this notebook does not reproduce the benefit reported in the paper, and that the result is sensitive to seeds and budget.",
    interpret='''print("share of logged points above the upper bound, DQN:", round(float(np.mean([np.array(dqn_runs[s]["q_log"])[:, 1] > UPPER for s in SEEDS])), 3))
 print("share of logged points above the upper bound, Double DQN:", round(float(np.mean([np.array(ddqn_runs[s]["q_log"])[:, 1] > UPPER for s in SEEDS])), 3))
 print("evaluation return DQN:", np.round(dqn_eval, 1), "| Double DQN:", np.round(ddqn_eval, 1))''',

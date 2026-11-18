@@ -1,0 +1,83 @@
+{
+  "notebook": "hyperparameter_optimization",
+  "family": "advanced",
+  "algorithm": "random search vs grid search",
+  "dataset": "digits",
+  "task": "classification",
+  "seed": 42,
+  "config": {
+    "outer_cv": 5,
+    "inner_cv": 3,
+    "model": "SVC RBF"
+  },
+  "metrics": {
+    "random_5_inner_best_score": 0.9521410345627463,
+    "random_5_outer_score": 0.982751470133086,
+    "random_5_outer_std": 0.006913238588523467,
+    "random_5_optimism": -0.0306104355703396,
+    "random_20_inner_best_score": 0.9542272674553468,
+    "random_20_outer_score": 0.981637264004952,
+    "random_20_outer_std": 0.007246286887991113,
+    "random_20_optimism": -0.027409996549605187,
+    "random_60_inner_best_score": 0.9547836928786826,
+    "random_60_outer_score": 0.9821943670690189,
+    "random_60_outer_std": 0.006971294829692515,
+    "random_60_optimism": -0.02741067419033627,
+    "grid_36_inner_best_score": 0.9524202621201578,
+    "grid_36_outer_score": 0.9844165892912411,
+    "grid_36_outer_std": 0.008016975343186562,
+    "grid_36_optimism": -0.03199632717108325,
+    "default_svc_accuracy": 0.9838579387186629
+  },
+  "extra": {
+    "table": [
+      {
+        "strategy": "random 5",
+        "inner_best_score": 0.9521,
+        "outer_score": 0.9828,
+        "outer_std": 0.0069,
+        "optimism": -0.0306
+      },
+      {
+        "strategy": "random 20",
+        "inner_best_score": 0.9542,
+        "outer_score": 0.9816,
+        "outer_std": 0.0072,
+        "optimism": -0.0274
+      },
+      {
+        "strategy": "random 60",
+        "inner_best_score": 0.9548,
+        "outer_score": 0.9822,
+        "outer_std": 0.007,
+        "optimism": -0.0274
+      },
+      {
+        "strategy": "grid 36",
+        "inner_best_score": 0.9524,
+        "outer_score": 0.9844,
+        "outer_std": 0.008,
+        "optimism": -0.032
+      }
+    ]
+  },
+  "created": "2026-11-18T05:26:32+00:00",
+  "environment": {
+    "python": "3.13.18",
+    "platform": "Linux-6.18.44-fc-v595-x86_64-with-glibc2.39",
+    "cpu_count": 2,
+    "packages": {
+      "numpy": "2.5.3",
+      "pandas": "3.0.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "matplotlib": "3.11.2",
+      "xgboost": "3.4.1",
+      "lightgbm": "4.7.0",
+      "catboost": "1.2.10",
+      "umap-learn": "0.6.0",
+      "torch": "2.15.0",
+      "gymnasium": "1.4.0"
+    }
+  }
+}

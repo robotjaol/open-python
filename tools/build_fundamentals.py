@@ -1,5 +1,4 @@
 """Build fundamentals notebooks. Synthetic data is used only to explain maths."""
-import sys
 from pathlib import Path
 
 import nbformat
